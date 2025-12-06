@@ -85,10 +85,10 @@ const RESUME_DATA = {
   ],
   projects: [
     {
-      title: "Smart Civic Reporting",
-      tech: ["Node.js", "MongoDB", "Express"],
-      desc: "Full-stack issue resolution system with automated routing. Connects citizens via web and USSD interfaces for inclusive civic engagement.",
-      link: "https://github.com/rameshkumark24/Civic-Sense-SIH"
+      title: "Sales Forecasting System",
+      tech: ["Python", "Scikit-learn", "Power BI"],
+      desc: "ML system forecasting sales for 50+ stores with 27% accuracy gain. Utilizes time-series analysis and Power BI for actionable insights.",
+      link: "https://github.com/rameshkumark24/Sales-Forecasting-System"
     },
     {
       title: "Jarvis AI Assistant",
@@ -97,16 +97,22 @@ const RESUME_DATA = {
       link: "https://github.com/rameshkumark24/Jarvis"
     },
     {
+      title: "Smart Civic Reporting",
+      tech: ["Node.js", "MongoDB", "Express"],
+      desc: "Full-stack issue resolution system with automated routing. Connects citizens via web and USSD interfaces for inclusive civic engagement.",
+      link: "https://github.com/rameshkumark24/Civic-Sense-SIH"
+    },
+    {
+      title: "My Client Portfolio Website",
+      tech: ["React", "Framer Motion", "Tailwind"],
+      desc: "Responsive client website built with React and Framer Motion. Features glassmorphism UI, SEO optimization, and automated Vercel deployment.",
+      link: "https://github.com/rameshkumark24/Umapandiyan"
+    },
+    {
       title: "GenAI Document QA System",
       tech: ["FastAPI", "Docker", "AWS", "OpenAI"],
       desc: "Document assistant extracting text from PDFs to answer queries. Features Docker containerization, AWS integration, and offline fallback capabilities.",
       link: "https://github.com/rameshkumark24/GenAI-Document-Assistant"
-    },
-    {
-      title: "Snap2PDF Toolkit",
-      tech: ["JavaScript", "HTML/CSS", "jsPDF"],
-      desc: "Privacy-first offline PDF toolkit using Vanilla JS. Enables camera capture, merging, splitting, and text extraction without server uploads.",
-      link: "https://github.com/rameshkumark24/Snap2pdf"
     },
     {
       title: "Food Delivery Time Prediction",
@@ -115,34 +121,22 @@ const RESUME_DATA = {
       link: "https://github.com/rameshkumark24/FoodDelivery_time_prediction"
     },
     {
-      title: "Sales Forecasting System",
-      tech: ["Python", "Scikit-learn", "Power BI"],
-      desc: "ML system forecasting sales for 50+ stores with 27% accuracy gain. Utilizes time-series analysis and Power BI for actionable insights.",
-      link: "https://github.com/rameshkumark24/Sales-Forecasting-System"
-    },
-    {
-      title: "Skin Tone Detection",
-      tech: ["Python", "OpenCV", "Scikit-learn"],
-      desc: "Computer vision app classifying skin tones from video feeds. Combines OpenCV feature extraction with Random Forest for real-time inference.",
-      link: "https://github.com/rameshkumark24/skincolordetector"
-    },
-    {
-      title: "Fashion Recommendation",
+      title: "Fashion Recommendation System",
       tech: ["ResNet50", "TensorFlow", "Flask"],
       desc: "Visual recommendation engine using ResNet50 to analyze 44k+ images. Deploys Nearest Neighbors to identify and suggest similar products.",
       link: "https://github.com/rameshkumark24/Fashion-Prediction"
     },
     {
-      title: "Stock Market Prediction",
+      title: "Personal Dressing AI",
+      tech: ["Python", "OpenCV", "Scikit-learn"],
+      desc: "AI-powered tool detecting skin tone for personalized fashion advice. Combines OpenCV feature extraction with Random Forest for real-time inference.",
+      link: "https://github.com/rameshkumark24/skincolordetector"
+    },
+    {
+      title: "Stock Marketing System",
       tech: ["Python", "LSTM", "yfinance"],
       desc: "Deep learning model predicting 10-day stock trends using LSTM. Processes historical data to identify complex price patterns and relationships.",
       link: "https://github.com/rameshkumark24/Stockmarketfutureprediction"
-    },
-    {
-      title: "My Client Portfolio Website",
-      tech: ["React", "Framer Motion", "Tailwind"],
-      desc: "Responsive client website built with React and Framer Motion. Features glassmorphism UI, SEO optimization, and automated Vercel deployment.",
-      link: "https://github.com/rameshkumark24/Umapandiyan"
     }
   ],
   certifications: [
