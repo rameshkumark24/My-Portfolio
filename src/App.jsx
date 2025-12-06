@@ -18,7 +18,9 @@ import {
   Cloud,
   BarChart,
   Box,
-  Brain
+  Brain,
+  Award,
+  FileText
 } from 'lucide-react';
 
 // --- DATA FROM RESUME ---
@@ -28,6 +30,8 @@ const RESUME_DATA = {
   tagline: "Unlocking insights as a Data Scientist and building scalable infrastructure as a Cloud & ML Engineer. Proficient in optimizing MLOps workflows and developing advanced Generative AI solutions.",
   email: "rameshkumaroff@gmail.com",
   profileImage: "https://i.ibb.co/jvVWGRTv/Whats-App-Image-2025-12-06-at-3-21-53-PM.jpg",
+  resumeLink: "https://drive.google.com/drive/folders/1JBDQXGWWhgc7Q3D0EZZ9gQKw_pZHBJ_y",
+  certificatesLink: "https://drive.google.com/drive/folders/18hHjcG4N5VB1VYcGvHMQqcd8tI4C_QiW?usp=sharing",
   socials: {
     linkedin: "https://linkedin.com/in/RameshkumarK",
     github: "https://github.com/rameshkumar24",
@@ -55,8 +59,8 @@ const RESUME_DATA = {
       icon: <Layers size={24} /> 
     },
     { 
-      name: "Vibe Coding & Databases", 
-      tech: "React, FastAPI, SQL, MongoDB, Vercel", 
+      name: "Web Development & Database", 
+      tech: "Vibe Coding, SQL, MongoDB", 
       icon: <Code size={24} /> 
     },
     { 
@@ -140,6 +144,17 @@ const RESUME_DATA = {
       desc: "Responsive client website built with React and Framer Motion. Features glassmorphism UI, SEO optimization, and automated Vercel deployment.",
       link: "https://github.com/rameshkumark24/Umapandiyan"
     }
+  ],
+  certifications: [
+    "Tata Data Visualization: Empowering Business with Effective Insights – Virtual Job Simulation (Forage)",
+    "Deloitte Australia Data Analytics – Virtual Job Simulation (Forage)",
+    "Tata GenAI - Powered Data Analytics – Virtual Job Simulation (Forage)",
+    "Deep Learning with TensorFlow – IBM Developer Skills Network (CognitiveClass.ai)",
+    "Google Cloud Data Analytics Certificate - Google Skills",
+    "Augment your LLM Using Retrieval Augmented Generation - Nvidia",
+    "Foundations of Prompt Engineering – AWS Skill Builder",
+    "No-Code Machine Learning and Generative AI – AWS Skill Builder",
+    "C, C++, and Java Training – Spoken Tutorial Project, IIT Bombay"
   ]
 };
 
@@ -203,7 +218,7 @@ const App = () => {
   // Intersection Observer for Scroll Spy & Reveal
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'about', 'skills', 'projects', 'experience', 'contact'];
+      const sections = ['hero', 'about', 'skills', 'projects', 'experience', 'certifications', 'contact'];
       const scrollPosition = window.scrollY + 300;
 
       sections.forEach(section => {
@@ -337,7 +352,7 @@ const App = () => {
       <nav className="fixed w-full top-0 z-50 backdrop-blur-lg border-b transition-colors duration-300 border-custom" style={{ backgroundColor: 'rgba(var(--bg-primary), 0.8)' }}>
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           
-          {/* TITLE WITHOUT IMAGE */}
+          {/* TITLE ONLY */}
           <a 
             href="#" 
             className="flex items-center gap-3 text-2xl font-bold tracking-tighter transition-colors"
@@ -352,7 +367,7 @@ const App = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            {['About', 'Skills', 'Projects', 'Experience', 'Contact'].map((item) => (
+            {['About', 'Skills', 'Projects', 'Experience', 'Certifications', 'Contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollTo(item.toLowerCase())}
@@ -391,7 +406,7 @@ const App = () => {
         {/* Mobile Menu Dropdown */}
         {isMenuOpen && (
           <div className="md:hidden fixed top-[73px] left-0 w-full h-[calc(100vh-73px)] p-8 flex flex-col items-center gap-8 bg-custom-primary overflow-y-auto">
-            {['About', 'Skills', 'Projects', 'Experience', 'Contact'].map((item) => (
+            {['About', 'Skills', 'Projects', 'Experience', 'Certifications', 'Contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollTo(item.toLowerCase())}
@@ -437,8 +452,12 @@ const App = () => {
             </p>
             
             <div className="flex flex-wrap gap-4 pt-4">
-              <button 
-                onClick={() => scrollTo('contact')}
+              <a 
+                href={RESUME_DATA.socials.portfolio} 
+                onClick={(e) => {
+                    e.preventDefault();
+                    scrollTo('contact');
+                }}
                 className="px-8 py-3 text-white font-bold rounded-lg hover:transform hover:-translate-y-1 transition-all duration-300 touch-manipulation"
                 style={{ 
                   backgroundColor: 'var(--accent-primary)',
@@ -448,17 +467,18 @@ const App = () => {
                 onMouseLeave={() => setIsHovering(false)}
               >
                 Let's Talk
-              </button>
+              </a>
               <a 
-                href={RESUME_DATA.socials.github} 
+                href={RESUME_DATA.resumeLink} 
                 target="_blank" 
                 rel="noreferrer"
-                className="px-8 py-3 border rounded-lg font-bold hover:bg-opacity-10 transition-all border-custom touch-manipulation"
+                className="flex items-center gap-2 px-8 py-3 border rounded-lg font-bold hover:bg-opacity-10 transition-all border-custom touch-manipulation"
                 style={{ hoverBackgroundColor: 'var(--accent-primary)' }}
                 onMouseEnter={() => setIsHovering(true)}
                 onMouseLeave={() => setIsHovering(false)}
               >
-                View GitHub
+                <FileText size={20} />
+                View Resume
               </a>
             </div>
           </div>
@@ -610,8 +630,55 @@ const App = () => {
         </div>
       </section>
 
+      {/* --- CERTIFICATIONS SECTION --- */}
+      <section id="certifications" className="py-24 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16" style={{ fontFamily: 'var(--font-heading)' }}>
+            Achievements & <span style={{ color: 'var(--accent-primary)' }}>Certifications</span>
+          </h2>
+          
+          <div className="grid grid-cols-1 gap-4">
+            {RESUME_DATA.certifications.map((cert, idx) => (
+              <div 
+                key={idx}
+                className="flex items-start gap-4 p-4 rounded-lg border transition-all hover:translate-x-1 border-custom bg-custom-secondary"
+                style={{ hoverBorderColor: 'var(--accent-primary)' }}
+                onMouseEnter={(e) => {
+                    setIsHovering(true);
+                    e.currentTarget.style.borderColor = 'var(--accent-primary)';
+                }}
+                onMouseLeave={(e) => {
+                    setIsHovering(false);
+                    e.currentTarget.style.borderColor = ''; // reset
+                }}
+              >
+                <div className="mt-1" style={{ color: 'var(--accent-primary)' }}>
+                    <Award size={20} />
+                </div>
+                <p className="text-sm md:text-base font-medium text-custom-primary">{cert}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <a 
+                href={RESUME_DATA.certificatesLink}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 border rounded-lg font-bold hover:bg-opacity-10 transition-all border-custom touch-manipulation"
+                style={{ color: 'var(--accent-primary)', borderColor: 'var(--accent-primary)' }}
+                onMouseEnter={() => setIsHovering(true)}
+                onMouseLeave={() => setIsHovering(false)}
+            >
+                <ExternalLink size={18} />
+                View Certificates & Credentials
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* --- CONTACT SECTION --- */}
-      <section id="contact" className="py-24 px-6 relative overflow-hidden">
+      <section id="contact" className="py-24 px-6 relative overflow-hidden bg-custom-secondary">
          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full blur-3xl pointer-events-none" style={{ backgroundColor: 'rgba(212, 175, 55, 0.05)' }} />
          
          <div className="max-w-3xl mx-auto text-center relative z-10">
@@ -656,7 +723,7 @@ const App = () => {
                       scrollTo('hero');
                     }
                   }}
-                  className="p-4 rounded-full border transition-all hover:-translate-y-2 border-custom bg-custom-secondary touch-manipulation"
+                  className="p-4 rounded-full border transition-all hover:-translate-y-2 border-custom bg-custom-primary touch-manipulation"
                   style={{ hoverColor: 'var(--accent-primary)', hoverBorderColor: 'var(--accent-primary)' }}
                   onMouseEnter={(e) => {
                     setIsHovering(true);
