@@ -691,7 +691,9 @@ const App = () => {
            
            <div className="flex flex-col md:flex-row justify-center gap-6">
              <a 
-              href={`mailto:${RESUME_DATA.email}`}
+              href={`https://mail.google.com/mail/?view=cm&fs=1&to=${RESUME_DATA.email}`}
+              target="_blank"
+              rel="noreferrer"
               className="group flex items-center justify-center gap-3 px-8 py-4 text-white font-bold rounded-lg transition-all touch-manipulation"
               style={{ backgroundColor: 'var(--accent-primary)' }}
               onMouseEnter={() => setIsHovering(true)}
