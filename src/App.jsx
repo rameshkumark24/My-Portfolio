@@ -146,6 +146,7 @@ const RESUME_DATA = {
     "Deep Learning with TensorFlow – IBM Developer Skills Network (CognitiveClass.ai)",
     "Foundations of Prompt Engineering – AWS Skill Builder",
     "No-Code Machine Learning and Generative AI – AWS Skill Builder",
+    "Building Language Models on AWS – AWS Skill Builder",
     "C, C++, and Java Training – Spoken Tutorial Project, IIT Bombay"
   ]
 };
