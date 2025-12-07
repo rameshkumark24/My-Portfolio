@@ -144,7 +144,6 @@ const RESUME_DATA = {
     "Deloitte Australia Data Analytics – Virtual Job Simulation (Forage)",
     "Tata GenAI - Powered Data Analytics – Virtual Job Simulation (Forage)",
     "Deep Learning with TensorFlow – IBM Developer Skills Network (CognitiveClass.ai)",
-    "Google Cloud Data Analytics Certificate - Google Skills",
     "Foundations of Prompt Engineering – AWS Skill Builder",
     "No-Code Machine Learning and Generative AI – AWS Skill Builder",
     "C, C++, and Java Training – Spoken Tutorial Project, IIT Bombay"
