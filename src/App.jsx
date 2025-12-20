@@ -33,7 +33,7 @@ const RESUME_DATA = {
   resumeLink: "https://drive.google.com/drive/folders/1JBDQXGWWhgc7Q3D0EZZ9gQKw_pZHBJ_y",
   certificatesLink: "https://drive.google.com/drive/folders/18hHjcG4N5VB1VYcGvHMQqcd8tI4C_QiW?usp=sharing",
   socials: {
-    linkedin: "www.linkedin.com/in/rameshkumark24",
+    linkedin: "https://www.linkedin.com/in/rameshkumark24/",
     github: "https://github.com/rameshkumark24",
     portfolio: "#hero" 
   },
