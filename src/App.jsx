@@ -33,8 +33,8 @@ const RESUME_DATA = {
   resumeLink: "https://drive.google.com/drive/folders/1JBDQXGWWhgc7Q3D0EZZ9gQKw_pZHBJ_y",
   certificatesLink: "https://drive.google.com/drive/folders/18hHjcG4N5VB1VYcGvHMQqcd8tI4C_QiW?usp=sharing",
   socials: {
-    linkedin: "https://www.linkedin.com/in/rameshkumark24/",
-    github: "https://github.com/rameshkumark24",
+    linkedin: "https://www.linkedin.com/in/rameshkumark24/", // Updated Link
+    github: "https://github.com/rameshkumark24", // Confirmed Link
     portfolio: "#hero" 
   },
   skills: [
@@ -144,9 +144,10 @@ const RESUME_DATA = {
     "Deloitte Australia Data Analytics – Virtual Job Simulation (Forage)",
     "Tata GenAI - Powered Data Analytics – Virtual Job Simulation (Forage)",
     "Deep Learning with TensorFlow – IBM Developer Skills Network (CognitiveClass.ai)",
+    "Google Cloud Data Analytics Certificate - Google Skills",
+    "Augment your LLM Using Retrieval Augmented Generation - Nvidia",
     "Foundations of Prompt Engineering – AWS Skill Builder",
     "No-Code Machine Learning and Generative AI – AWS Skill Builder",
-    "Building Language Models on AWS – AWS Skill Builder",
     "C, C++, and Java Training – Spoken Tutorial Project, IIT Bombay"
   ]
 };
@@ -345,7 +346,7 @@ const App = () => {
       <nav className="fixed w-full top-0 z-50 backdrop-blur-lg border-b transition-colors duration-300 border-custom" style={{ backgroundColor: 'rgba(var(--bg-primary), 0.8)' }}>
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           
-          {/* TITLE ONLY */}
+          {/* TITLE WITHOUT IMAGE */}
           <a 
             href="#" 
             className="flex items-center gap-3 text-2xl font-bold tracking-tighter transition-colors"
