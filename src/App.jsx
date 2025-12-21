@@ -33,8 +33,8 @@ const RESUME_DATA = {
   resumeLink: "https://drive.google.com/drive/folders/1JBDQXGWWhgc7Q3D0EZZ9gQKw_pZHBJ_y",
   certificatesLink: "https://drive.google.com/drive/folders/18hHjcG4N5VB1VYcGvHMQqcd8tI4C_QiW?usp=sharing",
   socials: {
-    linkedin: "https://www.linkedin.com/in/rameshkumark24/", // Updated Link
-    github: "https://github.com/rameshkumark24", // Confirmed Link
+    linkedin: "https://www.linkedin.com/in/rameshkumark24/",
+    github: "https://github.com/rameshkumark24",
     portfolio: "#hero" 
   },
   skills: [
@@ -101,6 +101,12 @@ const RESUME_DATA = {
       tech: ["Node.js", "MongoDB", "Express"],
       desc: "Full-stack issue resolution system with automated routing. Connects citizens via web and USSD interfaces for inclusive civic engagement.",
       link: "https://github.com/rameshkumark24/Civic-Sense-SIH"
+    },
+    {
+      title: "KalyanamBiodata Maker",
+      tech: ["React", "Tailwind", "jsPDF"],
+      desc: "Privacy-focused web app for generating professional marriage biodatas. Features real-time previews, horoscope generation, and high-quality A4 PDF export.",
+      link: "https://github.com/rameshkumark24/Kalyanambiodata"
     },
     {
       title: "My Client Portfolio Website",
