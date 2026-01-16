@@ -67,7 +67,7 @@ const RESUME_DATA = {
       name: "AWS & Cloud", 
       tech: "AWS (EC2, S3, IAM), Vercel, Cloud Deployment",
       icon: <Cloud size={24} /> 
-    },
+    }
   ],
   experience: [
     {
@@ -81,6 +81,7 @@ const RESUME_DATA = {
       role: "Freelance",
       period: "2024 - 2025",
       desc: "Delivered 4+ client websites using AI-assisted development workflows, handling requirement analysis, frontend implementation, and integration of authentication and databases, resulting in improved user engagement by up to 40%."
+      } 
   ],
   projects: [
     {
