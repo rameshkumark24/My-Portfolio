@@ -26,8 +26,8 @@ import {
 // --- DATA FROM RESUME ---
 const RESUME_DATA = {
   name: "Rameshkumar K",
-  role: "Data Scientist | Cloud & ML Engineer | GenAI & MLOps",
-  tagline: "Unlocking insights as a Data Scientist and building scalable infrastructure as a Cloud & ML Engineer. Proficient in optimizing MLOps workflows and developing advanced Generative AI solutions.",
+  role: "AI & Machine Learning Enthusiast | Aspiring Software Engineer",
+  tagline: "Computer Science student specializing in AI & ML, focused on building practical machine learning applications, data-driven systems, and scalable web solutions.",
   email: "rameshkumaroff@gmail.com",
   profileImage: "https://i.ibb.co/jvVWGRTv/Whats-App-Image-2025-12-06-at-3-21-53-PM.jpg",
   resumeLink: "https://drive.google.com/drive/folders/1JBDQXGWWhgc7Q3D0EZZ9gQKw_pZHBJ_y",
@@ -45,22 +45,22 @@ const RESUME_DATA = {
     },
     { 
       name: "Data Science", 
-      tech: "Pandas, NumPy, Power BI, Tableau, Excel, Statistics",
+      tech: "Pandas, NumPy, Power BI, Excel, Statistics",
       icon: <BarChart size={24} /> 
     },
-    { 
-      name: "Docker & MLOps", 
-      tech: "Docker, GitHub Actions, MLFlow, CI/CD",
-      icon: <Box size={24} /> 
+    {
+      name: "Backend & Deployment",
+      tech: "Flask, Docker (Basics), AWS (EC2, S3)",
+      icon: <Box size={24} />
     },
     { 
       name: "Generative AI", 
-      tech: "LLMs, Transformers, RAG, Prompt Engineering",
+      tech: "LLMs, Prompt Engineering, RAG (conceptual & applied)",
       icon: <Layers size={24} /> 
     },
     { 
       name: "Web Development & Database", 
-      tech: "Vibe Coding, SQL, MongoDB", 
+      tech: "Frontend Development, SQL, MongoDB", 
       icon: <Code size={24} /> 
     },
     { 
@@ -74,32 +74,31 @@ const RESUME_DATA = {
       company: "Lennox India Technology Center",
       role: "Summer Intern",
       period: "Jun 2025 - Aug 2025",
-      desc: "Analyzed production codebases and developed a proof-of-concept bot using Automation Anywhere. Gained exposure to corporate automation workflows and agile collaboration."
+      desc: "Reviewed existing automation solutions and production workflows, and contributed to a proof-of-concept bot using Automation Anywhere. Gained practical exposure to enterprise automation processes, documentation, and agile collaboration."
     },
     {
       company: "Web Development",
       role: "Freelance",
       period: "2024 - 2025",
-      desc: "Launched 4+ digital solutions using AI-assisted platforms. Integrated authentication and databases, enhancing user engagement by 40%."
-    }
+      desc: "Delivered 4+ client websites using AI-assisted development workflows, handling requirement analysis, frontend implementation, and integration of authentication and databases, resulting in improved user engagement by up to 40%."
   ],
   projects: [
     {
       title: "Sales Forecasting System",
       tech: ["Python", "Scikit-learn", "Power BI"],
-      desc: "ML system forecasting sales for 50+ stores with 27% accuracy gain. Utilizes time-series analysis and Power BI for actionable insights.",
+      desc: "Built a machine learning–based sales forecasting system for 50+ stores, achieving a 27% accuracy improvement using time-series features and Power BI dashboards for insights.",
       link: "https://github.com/rameshkumark24/Sales-Forecasting-System"
     },
     {
       title: "Jarvis AI Assistant",
       tech: ["React", "Gemini API", "TypeScript"],
-      desc: "Voice-activated AI assistant powered by Google's Gemini API. Features real-time voice visualization, spoken responses, and comprehensive task execution.",
+      desc: "Voice-activated AI assistant built using Google's Gemini API, supporting voice input, spoken responses, and task-based interactions with real-time visualization.",
       link: "https://github.com/rameshkumark24/Jarvis"
     },
     {
       title: "Smart Civic Reporting",
       tech: ["Node.js", "MongoDB", "Express"],
-      desc: "Full-stack issue resolution system with automated routing. Connects citizens via web and USSD interfaces for inclusive civic engagement.",
+      desc: "Full-stack civic issue reporting system enabling citizens to submit and track issues via web and USSD interfaces, with rule-based routing for improved accessibility.",
       link: "https://github.com/rameshkumark24/Civic-Sense-SIH"
     },
     {
@@ -111,19 +110,13 @@ const RESUME_DATA = {
     {
       title: "My Client Portfolio Website",
       tech: ["React", "Framer Motion", "Tailwind"],
-      desc: "Responsive client website built with React and Framer Motion. Features glassmorphism UI, SEO optimization, and automated Vercel deployment.",
+      desc: "Responsive client website built with React and Framer Motion, featuring modern UI design, integration of Google Analytics, sitemap generation, SEO-optimized titles and meta descriptions, and automated deployment via Vercel.",
       link: "https://github.com/rameshkumark24/Umapandiyan"
-    },
-    {
-      title: "GenAI Document QA System",
-      tech: ["FastAPI", "Docker", "AWS", "OpenAI"],
-      desc: "Document assistant extracting text from PDFs to answer queries. Features Docker containerization, AWS integration, and offline fallback capabilities.",
-      link: "https://github.com/rameshkumark24/GenAI-Document-Assistant"
     },
     {
       title: "Food Delivery Time Prediction",
       tech: ["Python", "Flask", "XGBoost"],
-      desc: "Production-ready ML app predicting delivery times with 90% accuracy. Analyzes weather, traffic, and distance using XGBoost algorithms.",
+      desc: "Machine learning application predicting food delivery times with over 90% accuracy by modeling real-world features such as weather, traffic, and distance using XGBoost.",
       link: "https://github.com/rameshkumark24/FoodDelivery_time_prediction"
     },
     {
@@ -135,27 +128,24 @@ const RESUME_DATA = {
     {
       title: "Personal Dressing AI",
       tech: ["Python", "OpenCV", "Scikit-learn"],
-      desc: "AI-powered tool detecting skin tone for personalized fashion advice. Combines OpenCV feature extraction with Random Forest for real-time inference.",
+      desc: "AI-powered tool for skin tone detection and personalized fashion suggestions, combining OpenCV-based feature extraction with a Random Forest model.",
       link: "https://github.com/rameshkumark24/skincolordetector"
     },
     {
       title: "Stock Marketing System",
       tech: ["Python", "LSTM", "yfinance"],
-      desc: "Deep learning model predicting 10-day stock trends using LSTM. Processes historical data to identify complex price patterns and relationships.",
+      desc: "Deep learning project exploring 10-day stock trend prediction using LSTM models trained on historical market data.",
       link: "https://github.com/rameshkumark24/Stockmarketfutureprediction"
     }
   ],
   certifications: [
-    "Tata Data Visualization: Empowering Business with Effective Insights – Virtual Job Simulation (Forage)",
-    "Deloitte Australia Data Analytics – Virtual Job Simulation (Forage)",
-    "Tata GenAI - Powered Data Analytics – Virtual Job Simulation (Forage)",
-    "Deep Learning with TensorFlow – IBM Developer Skills Network (CognitiveClass.ai)",
-    "Google Cloud Data Analytics Certificate - Google Skills",
-    "Augment your LLM Using Retrieval Augmented Generation - Nvidia",
-    "Foundations of Prompt Engineering – AWS Skill Builder",
-    "No-Code Machine Learning and Generative AI – AWS Skill Builder",
-    "C, C++, and Java Training – Spoken Tutorial Project, IIT Bombay"
-  ]
+  "Deep Learning with TensorFlow – IBM Developer Skills Network",
+  "AWS Skill Builder – Prompt Engineering",
+  "AWS Skill Builder – No-Code Machine Learning and Generative AI",
+  "Tata GenAI-Powered Data Analytics – Virtual Job Simulation (Forage)",
+  "Deloitte Data Analytics – Virtual Job Simulation (Forage)",
+  "Tata Data Visualization – Virtual Job Simulation (Forage)"
+]
 };
 
 const App = () => {
@@ -194,7 +184,10 @@ const App = () => {
     };
 
     setMetaTag('description', RESUME_DATA.tagline);
-    setMetaTag('keywords', 'Data Scientist, AI Engineer, MLOps, GenAI, Machine Learning, Portfolio, Rameshkumar K');
+    setMetaTag(
+  'keywords',
+  'AI Engineer, Machine Learning, Software Engineer Fresher, Computer Science Student, Data Analytics, Portfolio, Rameshkumar K'
+);
     setMetaTag('author', RESUME_DATA.name);
 
     // 4. Open Graph (Social Media Cards)
@@ -518,7 +511,7 @@ const App = () => {
             I am a B.E. CSE (AI & ML) student at KPR Institute of Engineering and Technology with a CGPA of 8.1. 
             I have a strong foundation in Data Structures, Algorithms, and Machine Learning. 
             My passion lies in creating data-driven applications, from GenAI document assistants to sales forecasting systems. 
-            I thrive in solving real-world problems through code.
+            I enjoy applying data structures, machine learning, and backend fundamentals to solve real-world problems through clean and maintainable code.
           </p>
         </div>
       </section>
@@ -686,7 +679,8 @@ const App = () => {
              Let's Work <span style={{ color: 'var(--accent-primary)' }}>Together</span>
            </h2>
            <p className="text-xl mb-12 text-custom-secondary">
-             Looking for an AI Engineer, Data Scientist, GenAI, MLOps, or Cloud specialist? I'm currently available for freelance projects and internships.
+             Looking for a motivated Software Engineering or AI/ML fresher with strong project experience? 
+             I’m currently open to internships and freelance opportunities.
            </p>
            
            <div className="flex flex-col md:flex-row justify-center gap-6">
