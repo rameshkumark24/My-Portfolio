@@ -45,12 +45,12 @@ const RESUME_DATA = {
     },
     { 
       name: "Data Science", 
-      tech: "Pandas, NumPy, Power BI, Excel, Statistics",
+      tech: "Pandas, NumPy, Power BI, Excel, Statistics, Databricks",
       icon: <BarChart size={24} /> 
     },
     {
       name: "Backend & Deployment",
-      tech: "Flask, Docker (Basics), AWS (EC2, S3)",
+      tech: "Flask, Docker (Basics)",
       icon: <Box size={24} />
     },
     { 
@@ -65,7 +65,7 @@ const RESUME_DATA = {
     },
     { 
       name: "AWS & Cloud", 
-      tech: "AWS (EC2, S3, IAM), Vercel, Cloud Deployment",
+      tech: "AWS (EC2, S3), Vercel, Cloud Deployment",
       icon: <Cloud size={24} /> 
     }
   ],
