@@ -35,6 +35,7 @@ const RESUME_DATA = {
   socials: {
     linkedin: "https://www.linkedin.com/in/rameshkumark24/",
     github: "https://github.com/rameshkumark24",
+    leetcode: "https://leetcode.com/u/Ramesh_Kumar_K/",
     portfolio: "#hero" 
   },
   skills: [
@@ -704,6 +705,7 @@ const App = () => {
              {[
                { icon: <Linkedin size={24} />, link: RESUME_DATA.socials.linkedin },
                { icon: <Github size={24} />, link: RESUME_DATA.socials.github },
+               { icon: <Code size={24} />, link: RESUME_DATA.socials.leetcode },
                { icon: <Globe size={24} />, link: RESUME_DATA.socials.portfolio }
              ].map((social, idx) => {
                // Special handling for Website/Globe icon to scroll to Hero
