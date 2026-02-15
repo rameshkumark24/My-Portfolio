@@ -144,6 +144,7 @@ const RESUME_DATA = {
   "Deep Learning with TensorFlow – IBM Developer Skills Network",
   "AWS Skill Builder – Prompt Engineering",
   "AWS Skill Builder – No-Code Machine Learning and Generative AI",
+  "Databricks Academy – AI/BI for Analysts", 
   "Tata GenAI-Powered Data Analytics – Virtual Job Simulation (Forage)",
   "Deloitte Data Analytics – Virtual Job Simulation (Forage)",
   "Tata Data Visualization – Virtual Job Simulation (Forage)"
