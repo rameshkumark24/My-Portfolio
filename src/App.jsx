@@ -304,7 +304,8 @@ useEffect(() => {
       </div>
 
       {/* --- NAVBAR --- */}
-      <nav className="fixed w-full top-0 z-50 backdrop-blur-lg border-b transition-colors duration-300 border-custom" style={{ backgroundColor: 'rgba(var(--bg-primary), 0.8)' }}>
+      <nav className="fixed w-full top-0 z-50 backdrop-blur-lg border-b transition-colors duration-300 border-custom" 
+        style={{ backgroundColor: 'var(--bg-primary)' }}>
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           
           {/* TITLE WITHOUT IMAGE */}
