@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import { 
   Github, 
   Linkedin, 
@@ -20,18 +19,20 @@ import {
   Box,
   Brain,
   Award,
-  FileText
+  FileText,
+  Server,
+  Wrench
 } from 'lucide-react';
 
 // --- DATA FROM RESUME ---
 const RESUME_DATA = {
   name: "Rameshkumar K",
-  role: "AI & Machine Learning Enthusiast | Aspiring Software Engineer",
-  tagline: "Computer Science student specializing in AI & ML, focused on building practical machine learning applications, data-driven systems, and scalable web solutions.",
+  role: "Java Backend Developer | Spring Boot | DSA",
+  tagline: "Computer Science undergraduate focused on building scalable REST APIs, strong backend systems, and solving 200+ Data Structures & Algorithms problems using Java.",
   email: "rameshkumaroff@gmail.com",
   profileImage: "https://i.ibb.co/jvVWGRTv/Whats-App-Image-2025-12-06-at-3-21-53-PM.jpg",
   resumeLink: "https://drive.google.com/drive/folders/1JBDQXGWWhgc7Q3D0EZZ9gQKw_pZHBJ_y",
-  certificatesLink: "https://drive.google.com/drive/folders/18hHjcG4N5VB1VYcGvHMQqcd8tI4C_QiW?usp=sharing",
+  certificatesLink: "https://drive.google.com/drive/folders/1_Ps5q-H-QXrw_RmczzqJDkpuSNrZrzjd",
   socials: {
     linkedin: "https://www.linkedin.com/in/rameshkumark24/",
     github: "https://github.com/rameshkumark24",
@@ -39,35 +40,30 @@ const RESUME_DATA = {
     portfolio: "#hero" 
   },
   skills: [
-    { 
-      name: "Machine Learning", 
-      tech: "TensorFlow, PyTorch, Scikit-learn, XGBoost, OpenCV",
-      icon: <Brain size={24} /> 
-    },
-    { 
-      name: "Data Science", 
-      tech: "Pandas, NumPy, Power BI, Excel, Statistics, Databricks",
-      icon: <BarChart size={24} /> 
+    {
+      name: "Programming",
+      tech: "Java, SQL",
+      icon: <Code size={24} />
     },
     {
-      name: "Backend & Deployment",
-      tech: "Flask, Docker (Basics)",
-      icon: <Box size={24} />
+      name: "Backend Development",
+      tech: "Spring Boot, REST APIs, JPA, Hibernate",
+      icon: <Server size={24} />
     },
-    { 
-      name: "Generative AI", 
-      tech: "LLMs, Prompt Engineering, RAG (conceptual & applied)",
-      icon: <Layers size={24} /> 
+    {
+      name: "Databases",
+      tech: "MySQL, MongoDB",
+      icon: <Database size={24} />
     },
-    { 
-      name: "Web Development & Database", 
-      tech: "Frontend Development, SQL, MongoDB", 
-      icon: <Code size={24} /> 
+    {
+      name: "Core Concepts",
+      tech: "OOP, DSA, Collections Framework, HashMap Internals, Exception Handling",
+      icon: <Layers size={24} />
     },
-    { 
-      name: "AWS & Cloud", 
-      tech: "AWS (EC2, S3), Vercel, Cloud Deployment",
-      icon: <Cloud size={24} /> 
+    {
+      name: "Tools",
+      tech: "Git, Postman, IntelliJ IDEA",
+      icon: <Wrench size={24} />
     }
   ],
   experience: [
@@ -81,22 +77,10 @@ const RESUME_DATA = {
       company: "Web Development",
       role: "Freelance",
       period: "2024 - 2025",
-      desc: "Delivered 4+ client websites using AI-assisted development workflows, handling requirement analysis, frontend implementation, and integration of authentication and databases, resulting in improved user engagement by up to 40%."
+      desc: "Developed and deployed full-stack web applications including authentication flows, REST API integrations, and database-driven features, ensuring production-ready deployments and version-controlled workflows."
       } 
   ],
   projects: [
-    {
-      title: "Sales Forecasting System",
-      tech: ["Python", "Scikit-learn", "Power BI"],
-      desc: "Built a machine learning–based sales forecasting system for 50+ stores, achieving a 27% accuracy improvement using time-series features and Power BI dashboards for insights.",
-      link: "https://github.com/rameshkumark24/Sales-Forecasting-System"
-    },
-    {
-      title: "Jarvis AI Assistant",
-      tech: ["React", "Gemini API", "TypeScript"],
-      desc: "Voice-activated AI assistant built using Google's Gemini API, supporting voice input, spoken responses, and task-based interactions with real-time visualization.",
-      link: "https://github.com/rameshkumark24/Jarvis"
-    },
     {
       title: "Smart Civic Reporting",
       tech: ["Node.js", "MongoDB", "Express"],
@@ -114,40 +98,14 @@ const RESUME_DATA = {
       tech: ["React", "Framer Motion", "Tailwind"],
       desc: "Responsive client website built with React and Framer Motion, featuring modern UI design, integration of Google Analytics, sitemap generation, SEO-optimized titles and meta descriptions, and automated deployment via Vercel.",
       link: "https://github.com/rameshkumark24/Umapandiyan"
-    },
-    {
-      title: "Food Delivery Time Prediction",
-      tech: ["Python", "Flask", "XGBoost"],
-      desc: "Machine learning application predicting food delivery times with over 90% accuracy by modeling real-world features such as weather, traffic, and distance using XGBoost.",
-      link: "https://github.com/rameshkumark24/FoodDelivery_time_prediction"
-    },
-    {
-      title: "Fashion Recommendation System",
-      tech: ["ResNet50", "TensorFlow", "Flask"],
-      desc: "Visual recommendation engine using ResNet50 to analyze 44k+ images. Deploys Nearest Neighbors to identify and suggest similar products.",
-      link: "https://github.com/rameshkumark24/Fashion-Prediction"
-    },
-    {
-      title: "Personal Dressing AI",
-      tech: ["Python", "OpenCV", "Scikit-learn"],
-      desc: "AI-powered tool for skin tone detection and personalized fashion suggestions, combining OpenCV-based feature extraction with a Random Forest model.",
-      link: "https://github.com/rameshkumark24/skincolordetector"
-    },
-    {
-      title: "Stock Marketing System",
-      tech: ["Python", "LSTM", "yfinance"],
-      desc: "Deep learning project exploring 10-day stock trend prediction using LSTM models trained on historical market data.",
-      link: "https://github.com/rameshkumark24/Stockmarketfutureprediction"
     }
   ],
   certifications: [
-  "Deep Learning with TensorFlow – IBM Developer Skills Network",
-  "AWS Skill Builder – Prompt Engineering",
-  "AWS Skill Builder – No-Code Machine Learning and Generative AI",
+  "HackerRank – Problem Solving (Intermediate)",
+  "HackerRank – SQL (Basic)",
+  "IIT Bombay – Java Training (92.5%)",
   "Databricks Academy – AI/BI for Analysts", 
-  "Tata GenAI-Powered Data Analytics – Virtual Job Simulation (Forage)",
-  "Deloitte Data Analytics – Virtual Job Simulation (Forage)",
-  "Tata Data Visualization – Virtual Job Simulation (Forage)"
+  "Tata GenAI-Powered Data Analytics – Virtual Job Simulation (Forage)"
 ]
 };
 
@@ -162,45 +120,45 @@ const App = () => {
   const toggleTheme = () => setDarkMode(!darkMode);
 
   // --- SEO & META TAGS MANAGEMENT ---
-  useEffect(() => {
-    // 1. Page Title
-    document.title = `${RESUME_DATA.name} | ${RESUME_DATA.role}`;
+useEffect(() => {
+  document.title = `${RESUME_DATA.name} | ${RESUME_DATA.role}`;
 
-    // 2. Set Favicon dynamically to Profile Picture
-    let link = document.querySelector("link[rel~='icon']");
-    if (!link) {
-      link = document.createElement('link');
-      link.rel = 'icon';
-      document.getElementsByTagName('head')[0].appendChild(link);
+  let link = document.querySelector("link[rel~='icon']");
+  if (!link) {
+    link = document.createElement('link');
+    link.rel = 'icon';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  }
+  link.href = RESUME_DATA.profileImage;
+
+  const setMetaTag = (name, content, attribute = 'name') => {
+    let element = document.querySelector(`meta[${attribute}="${name}"]`);
+    if (!element) {
+      element = document.createElement('meta');
+      element.setAttribute(attribute, name);
+      document.head.appendChild(element);
     }
-    link.href = RESUME_DATA.profileImage;
+    element.setAttribute('content', content);
+  };
 
-    // 3. Search Engine Description
-    const setMetaTag = (name, content, attribute = 'name') => {
-      let element = document.querySelector(`meta[${attribute}="${name}"]`);
-      if (!element) {
-        element = document.createElement('meta');
-        element.setAttribute(attribute, name);
-        document.head.appendChild(element);
-      }
-      element.setAttribute('content', content);
-    };
+  setMetaTag('description', RESUME_DATA.tagline);
+  setMetaTag(
+    'keywords',
+    'Java Backend Developer, Spring Boot Developer, REST API Developer, Data Structures and Algorithms, Software Engineer Fresher, MySQL, Backend Portfolio, Rameshkumar K'
+  );
+  setMetaTag('author', RESUME_DATA.name);
 
-    setMetaTag('description', RESUME_DATA.tagline);
-    setMetaTag(
-  'keywords',
-  'AI Engineer, Machine Learning, Software Engineer Fresher, Computer Science Student, Data Analytics, Portfolio, Rameshkumar K'
-);
-    setMetaTag('author', RESUME_DATA.name);
+  setMetaTag('og:title', `${RESUME_DATA.name} - ${RESUME_DATA.role}`, 'property');
+  setMetaTag(
+    'og:description',
+    'Java Backend Developer portfolio featuring Spring Boot projects, REST APIs, database systems, and 200+ solved DSA problems.',
+    'property'
+  );
+  setMetaTag('og:image', RESUME_DATA.profileImage, 'property');
+  setMetaTag('og:url', "https://rameshkumark.com", 'property');
+  setMetaTag('og:type', 'website', 'property');
 
-    // 4. Open Graph (Social Media Cards)
-    setMetaTag('og:title', `${RESUME_DATA.name} - ${RESUME_DATA.role}`, 'property');
-    setMetaTag('og:description', "Explore my portfolio featuring GenAI, MLOps, and Data Science projects.", 'property');
-    setMetaTag('og:image', RESUME_DATA.profileImage, 'property');
-    setMetaTag('og:url', "https://rameshkumark.com", 'property');
-    setMetaTag('og:type', 'website', 'property');
-
-  }, []);
+}, []);
 
   // Custom Cursor Logic
   useEffect(() => {
@@ -511,10 +469,9 @@ const App = () => {
             About <span style={{ color: 'var(--accent-primary)' }}>Me</span>
           </h2>
           <p className="text-lg leading-relaxed text-custom-secondary">
-            I am a B.E. CSE (AI & ML) student at KPR Institute of Engineering and Technology with a CGPA of 8.1. 
-            I have a strong foundation in Data Structures, Algorithms, and Machine Learning. 
-            My passion lies in creating data-driven applications, from GenAI document assistants to sales forecasting systems. 
-            I enjoy applying data structures, machine learning, and backend fundamentals to solve real-world problems through clean and maintainable code.
+            I am a B.E. CSE (AI & ML) student at KPR Institute of Engineering and Technology with a CGPA of 8.1.
+            I focus on backend engineering using Java and Spring Boot, building scalable REST APIs, secure authentication systems, and structured database-driven applications.
+            I have solved 200+ DSA problems and continuously strengthen my understanding of OOP, collections, and system-level backend design.
           </p>
         </div>
       </section>
@@ -682,8 +639,7 @@ const App = () => {
              Let's Work <span style={{ color: 'var(--accent-primary)' }}>Together</span>
            </h2>
            <p className="text-xl mb-12 text-custom-secondary">
-             Looking for a motivated Software Engineering or AI/ML fresher with strong project experience? 
-             I’m currently open to internships and freelance opportunities.
+            Looking for a motivated Java Backend Developer with strong DSA and Spring Boot fundamentals. I am currently open to internships and full-time backend roles.
            </p>
            
            <div className="flex flex-col md:flex-row justify-center gap-6">
