@@ -82,11 +82,29 @@ const RESUME_DATA = {
       } 
   ],
   projects: [
+      {
+      title: "Placement Management System",
+      tech: ["Spring Boot", "Spring Security", "JWT", "MySQL", "Docker"],
+      desc: "Full-stack placement platform with role-based dashboards for admins and students, featuring secure JWT authentication, RESTful APIs for job applications and profile management, and Docker-based deployment.",
+      link: "https://github.com/rameshkumark24/placement_system"
+    },
+    {
+      title: "ATM Console Application",
+      tech: ["Java", "OOP", "HashMap"],
+      desc: "Java console-based ATM simulator with multi-user account management, PIN authentication with lockout protection, and core banking operations including withdrawal, deposit, and PIN change.",
+      link: "https://github.com/rameshkumark24/java-Console"
+    },
     {
       title: "Smart Civic Reporting",
       tech: ["Node.js", "MongoDB", "Express"],
       desc: "Full-stack civic issue reporting system enabling citizens to submit and track issues via web and USSD interfaces, with rule-based routing for improved accessibility.",
       link: "https://github.com/rameshkumark24/Civic-Sense-SIH"
+    },
+    {
+        title: "NeuraNexus 2K25 – College Symposium Website",
+        tech: ["React.js", "HTML", "CSS", "JavaScript", "Vercel"],
+        desc: "Official college symposium website with event listings, registration workflows, and dynamic content, built with React.js and deployed live on Vercel for real-time audience access.",
+        link: "https://github.com/rameshkumark24/NeuraNexux-2k25"
     },
     {
       title: "KalyanamBiodata Maker",
