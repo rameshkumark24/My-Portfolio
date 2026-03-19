@@ -48,7 +48,7 @@ const RESUME_DATA = {
     },
     {
       name: "Backend Development",
-      tech: "Spring Boot, REST APIs, JPA, Hibernate",
+      tech: "Spring Boot, Spring Security, REST APIs, JPA, Hibernate, JWT",
       icon: <Server size={24} />
     },
     {
@@ -58,12 +58,12 @@ const RESUME_DATA = {
     },
     {
       name: "Core Concepts",
-      tech: "OOP, DSA, Collections Framework, HashMap Internals, Exception Handling",
+      tech: "OOP, DSA, Collections Framework, Exception Handling, Authentication, Role-Based Access Control",
       icon: <Layers size={24} />
     },
     {
       name: "Tools",
-      tech: "Git, Postman, IntelliJ IDEA",
+      tech: "Git, Github, Docker, Postman, IntelliJ IDEA, Vercel, Render, Clever Cloud",
       icon: <Wrench size={24} />
     }
   ],
