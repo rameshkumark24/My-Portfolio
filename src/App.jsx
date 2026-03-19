@@ -82,10 +82,10 @@ const RESUME_DATA = {
       } 
   ],
   projects: [
-      {
+    {
       title: "Placement Management System",
-      tech: ["Spring Boot", "Spring Security", "JWT", "MySQL", "Docker"],
-      desc: "Full-stack placement platform with role-based dashboards for admins and students, featuring secure JWT authentication, RESTful APIs for job applications and profile management, and Docker-based deployment.",
+      tech: ["React", "Spring Boot", "Spring Security", "JWT", "MySQL", "Spring Data JPA", "Docker", "Vercel", "Render", "Clever Cloud"],
+      desc: "Full-stack placement platform with role-based admin and student dashboards, secure JWT authentication, company postings, profile management, application tracking, and status workflows. Deployed with a React frontend on Vercel, Spring Boot backend on Render, and MySQL on Clever Cloud.",
       link: "https://github.com/rameshkumark24/placement_system"
     },
     {
