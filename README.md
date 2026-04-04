@@ -27,7 +27,7 @@ This is my personal portfolio website showcasing:
 - Deployed full-stack systems and explored Prompt Engineering & Generative AI basics.
 
 ### 🏆 Achievements & Leadership
-- **Hackathons:** Selected for SIH institution level, Finalist in Flinders AI Univ Comp, next-round pick for Hushh AI Hackathon, and shortlisted for Aptean AI Hackathon.
+- **Hackathons:** Selected for SIH institution level, Finalist in Flinders AI Univ Comp, next-round pick for Hushh AI Hackathon, and participated for Aptean AI Hackathon.
 - **Problem Solving:** 200+ problems solved across arrays, hashing, trees, dynamic programming, and graphs.
 - **Leadership:** Led coordination for departmental technical events, managing communication with faculty and 200+ participants, increasing engagement by 20%.
 
