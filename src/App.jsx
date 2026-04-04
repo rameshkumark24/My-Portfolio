@@ -29,8 +29,8 @@ import {
 // --- DATA FROM RESUME ---
 const RESUME_DATA = {
   name: "Rameshkumar K",
-  role: "Java Backend Developer | AI Enthusiast",
-  tagline: "Computer Science undergraduate specializing in robust backend engineering (Spring Boot) with a strong foundation in Machine Learning. Passionate about building scalable REST APIs, secure database architectures, and empowering systems with intelligent AI integrations.",
+  role: "Software Development Engineer | Java Backend",
+  tagline: "Computer Science undergraduate specializing in robust backend engineering (Spring Boot). Passionate about building scalable REST APIs, secure database architectures, and leveraging advanced AI/ML capabilities to build next-generation systems.",
   email: "rameshkumaroff@gmail.com",
   profileImage: "https://i.ibb.co/jvVWGRTv/Whats-App-Image-2025-12-06-at-3-21-53-PM.jpg",
   resumeLink: "https://drive.google.com/drive/folders/1JBDQXGWWhgc7Q3D0EZZ9gQKw_pZHBJ_y",
