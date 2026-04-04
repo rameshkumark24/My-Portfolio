@@ -1,8 +1,8 @@
 # Rameshkumar K – Portfolio 🚀
 
-**Java Backend Developer | Spring Boot | Data Structures & Algorithms**
+**Java Backend Developer | AI/ML Integrations | Spring Boot**
 
-Building scalable REST APIs, secure backend systems, and database-driven applications using Java and Spring Boot.
+Computer Science undergraduate bridging robust backend engineering with Machine Learning. Passionate about building scalable REST APIs, managing databases, and integrating AI capabilities to create powerful next-generation applications.
 
 ---
 
@@ -10,37 +10,32 @@ Building scalable REST APIs, secure backend systems, and database-driven applica
 
 This is my personal portfolio website showcasing:
 
-- Backend engineering projects
-- REST API development
-- Authentication & security implementations
-- Database design
+- Backend engineering & AI/ML integration projects
+- REST APIs, secure system architectures, and cloud basics
 - 200+ solved Data Structures & Algorithms problems
+- Leadership in technical event coordination
+- Hackathon accomplishments (SIH, Hushh AI, Aptean AI, Flinders)
 
-🔗 **Live Demo:**  
-https://rameshkumark.vercel.app/
+🔗 **Live Demo:** https://rameshkumark.vercel.app/
 
 ---
 
 ## ✨ Key Highlights
 
-### 🔐 Backend Engineering Focus
-- Spring Boot REST APIs
-- JWT Authentication
-- Role-based access control
-- Global exception handling
-- Pagination & DTO design
-- Clean layered architecture (Controller → Service → Repository)
+### 🚀 Hybrid Backend & ML Focus
+- Combining foundational backend skills (Spring Boot, APIs, Databases) with intelligent AI/ML integrations.
+- Deployed full-stack systems and explored Prompt Engineering & Generative AI basics.
 
-### 🧠 Strong DSA Foundation
-- 200+ problems solved
-- Arrays, Hashing, Trees, Graphs, Dynamic Programming
-- Strong understanding of time & space complexity
+### 🏆 Achievements & Leadership
+- **Hackathons:** Selected for SIH institution level, Finalist in Flinders AI Univ Comp, next-round pick for Hushh AI Hackathon, and shortlisted for Aptean AI Hackathon.
+- **Problem Solving:** 200+ problems solved across arrays, hashing, trees, dynamic programming, and graphs.
+- **Leadership:** Led coordination for departmental technical events, managing communication with faculty and 200+ participants, increasing engagement by 20%.
 
-### 🗄 Database Systems
-- MySQL
-- JPA & Hibernate
-- Relational schema design
-- Indexing & query optimization basics
+### 🔐 Backend Engineering
+- Spring Boot REST APIs, JWT Authentication, and BCrypt
+- Role-based access control (RBAC) and clean layered architecture
+- Relational (MySQL) and Non-Relational (MongoDB) databases
+- JPA & Hibernate Object-Relational Mapping
 
 ---
 
@@ -48,13 +43,11 @@ https://rameshkumark.vercel.app/
 
 | Category   | Technologies |
 |------------|-------------|
-| Language   | Java |
-| Backend    | Spring Boot, REST APIs |
-| Database   | MySQL, MongoDB |
-| ORM        | JPA, Hibernate |
-| Security   | JWT, BCrypt |
-| Tools      | Git, Postman, IntelliJ IDEA |
-| Deployment | Vercel |
+| **Languages** | Python, Java (OOP, DSA), SQL |
+| **AI/ML** | Scikit-learn, TensorFlow, LLM Integration, Generative AI (Fundamentals), Prompt Engineering |
+| **Backend** | Spring Boot, REST APIs, JPA, Hibernate, JWT Authentication, BCrypt, RBAC |
+| **Databases**| MySQL, MongoDB |
+| **Tools & Platforms**| Git, GitHub, Postman, IntelliJ IDEA, Google Cloud Platform (GCP) (Basics) |
 
 ---
 
@@ -63,5 +56,5 @@ https://rameshkumark.vercel.app/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/rameshkumark24/rameshkumark.git
+git clone [https://github.com/rameshkumark24/rameshkumark.git](https://github.com/rameshkumark24/rameshkumark.git)
 cd rameshkumark
