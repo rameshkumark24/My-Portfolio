@@ -29,8 +29,8 @@ import {
 // --- DATA FROM RESUME ---
 const RESUME_DATA = {
   name: "Rameshkumar K",
-  role: "Software Development Engineer | Java Backend",
-  tagline: "Computer Science undergraduate specializing in robust backend engineering (Spring Boot). Passionate about building scalable REST APIs, secure database architectures, and leveraging advanced AI/ML capabilities to build next-generation systems.",
+  role: "Software Development Engineer",
+  tagline: "Computer Science undergraduate specializing in backend engineering and system architecture. Passionate about building robust APIs (Java/Spring Boot), developing scalable data workflows (Python/GCP), and bridging the gap between core backend systems and interactive frontends.",
   email: "rameshkumaroff@gmail.com",
   profileImage: "https://i.ibb.co/jvVWGRTv/Whats-App-Image-2025-12-06-at-3-21-53-PM.jpg",
   resumeLink: "https://drive.google.com/drive/folders/1JBDQXGWWhgc7Q3D0EZZ9gQKw_pZHBJ_y",
@@ -44,27 +44,27 @@ const RESUME_DATA = {
   skills: [
     {
       name: "Languages",
-      tech: "Python, Java (OOP, DSA), SQL",
+      tech: "Java, Python, SQL",
       icon: <Code size={24} />
     },
     {
-      name: "AI/ML",
-      tech: "Scikit-learn, TensorFlow, LLM Integration, Generative AI (Fundamentals), Prompt Engineering",
-      icon: <Brain size={24} />
-    },
-    {
-      name: "Backend",
-      tech: "Spring Boot, REST APIs, JPA, Hibernate, JWT Authentication, BCrypt, Role-Based Access Control (RBAC)",
+      name: "Backend & Cloud",
+      tech: "Spring Boot, REST APIs, Google Cloud Platform (GCP)",
       icon: <Server size={24} />
     },
     {
-      name: "Database",
+      name: "Frontend & AI",
+      tech: "React.js, TensorFlow, LLM Integrations",
+      icon: <Layers size={24} />
+    },
+    {
+      name: "Databases",
       tech: "MySQL, MongoDB",
       icon: <Database size={24} />
     },
     {
-      name: "Tools & Platforms",
-      tech: "Git, GitHub, Postman, IntelliJ IDEA, Google Cloud Platform (GCP) (Basics)",
+      name: "Core & Tools",
+      tech: "DSA (200+), OOP, Git, Postman, IntelliJ",
       icon: <Wrench size={24} />
     }
   ],
@@ -79,7 +79,7 @@ const RESUME_DATA = {
       company: "Web Development",
       role: "Freelance",
       period: "2024 - 2025",
-      desc: "Developed and deployed full-stack web applications including authentication flows, REST API integrations, and database-driven features, ensuring production-ready deployments and version-controlled workflows."
+      desc: "Developed and deployed full-stack web applications including authentication flows, REST API integrations, and database-driven features using modern frameworks."
     } 
   ],
   projects: [
@@ -121,11 +121,11 @@ const RESUME_DATA = {
     }
   ],
   achievements: [
+    "Served as Public Relations Officer, leading coordination for departmental technical events, managing communication with faculty and 200+ participants, and effectively increasing overall engagement by 20%.",
     "Solved 200+ Data Structures and Algorithms problems across arrays, hashing, trees, dynamic programming, and graphs.",
     "Selected for next round in Hushh AI Hackathon (24-hour), built an AI-assisted placement system.",
     "Shortlisted for Aptean AI Hackathon (4-hour), worked on an AI-powered ERP solution.",
     "Finalist, Flinders AI University Competition – recognized for strong AI and problem-solving skills.",
-    "Served as Public Relations Officer, leading coordination for departmental technical events, managing communication with faculty and 200+ participants, and effectively increasing overall engagement by 20%.",
     "Selected at the institutional level for Smart India Hackathon (SIH) through competitive internal evaluation."
   ],
   certifications: [
