@@ -20,6 +20,7 @@ import {
   Box,
   Brain,
   Award,
+  Trophy,
   FileText,
   Server,
   Wrench
@@ -28,8 +29,8 @@ import {
 // --- DATA FROM RESUME ---
 const RESUME_DATA = {
   name: "Rameshkumar K",
-  role: "Java Backend Developer | Spring Boot | DSA",
-  tagline: "Computer Science undergraduate focused on building scalable REST APIs, strong backend systems, and solving 200+ Data Structures & Algorithms problems using Java.",
+  role: "Java Backend Developer | AI/ML Integrations",
+  tagline: "Computer Science undergraduate bridging robust backend engineering (Spring Boot) with Machine Learning. Passionate about building scalable REST APIs, managing databases, and integrating AI capabilities to create next-generation applications.",
   email: "rameshkumaroff@gmail.com",
   profileImage: "https://i.ibb.co/jvVWGRTv/Whats-App-Image-2025-12-06-at-3-21-53-PM.jpg",
   resumeLink: "https://drive.google.com/drive/folders/1JBDQXGWWhgc7Q3D0EZZ9gQKw_pZHBJ_y",
@@ -42,28 +43,28 @@ const RESUME_DATA = {
   },
   skills: [
     {
-      name: "Programming",
-      tech: "Java, SQL",
+      name: "Languages",
+      tech: "Python, Java (OOP, DSA), SQL",
       icon: <Code size={24} />
     },
     {
-      name: "Backend Development",
-      tech: "Spring Boot, Spring Security, REST APIs, JPA, Hibernate, JWT",
+      name: "AI/ML",
+      tech: "Scikit-learn, TensorFlow, LLM Integration, Generative AI (Fundamentals), Prompt Engineering",
+      icon: <Brain size={24} />
+    },
+    {
+      name: "Backend",
+      tech: "Spring Boot, REST APIs, JPA, Hibernate, JWT Authentication, BCrypt, Role-Based Access Control (RBAC)",
       icon: <Server size={24} />
     },
     {
-      name: "Databases",
+      name: "Database",
       tech: "MySQL, MongoDB",
       icon: <Database size={24} />
     },
     {
-      name: "Core Concepts",
-      tech: "OOP, DSA, Collections Framework, Exception Handling, Authentication, Role-Based Access Control",
-      icon: <Layers size={24} />
-    },
-    {
-      name: "Tools",
-      tech: "Git, Github, Docker, Postman, IntelliJ IDEA, Vercel, Render, Clever Cloud",
+      name: "Tools & Platforms",
+      tech: "Git, GitHub, Postman, IntelliJ IDEA, Google Cloud Platform (GCP) (Basics)",
       icon: <Wrench size={24} />
     }
   ],
@@ -75,24 +76,24 @@ const RESUME_DATA = {
       desc: "Reviewed existing automation solutions and production workflows, and contributed to a proof-of-concept bot using Automation Anywhere. Gained practical exposure to enterprise automation processes, documentation, and agile collaboration."
     },
     {
+      company: "Departmental Technical Events",
+      role: "Event Coordinator & Leadership",
+      period: "2023 - Present",
+      desc: "Led coordination for departmental technical events, managing communication with faculty and 200+ participants, effectively increasing overall engagement by 20%."
+    },
+    {
       company: "Web Development",
       role: "Freelance",
       period: "2024 - 2025",
       desc: "Developed and deployed full-stack web applications including authentication flows, REST API integrations, and database-driven features, ensuring production-ready deployments and version-controlled workflows."
-      } 
+    } 
   ],
   projects: [
     {
       title: "Placement Management System",
-      tech: ["React", "Spring Boot", "Spring Security", "JWT", "MySQL", "Spring Data JPA", "Docker", "Vercel", "Render", "Clever Cloud"],
-      desc: "Full-stack placement platform with role-based admin and student dashboards, secure JWT authentication, company postings, profile management, application tracking, and status workflows. Deployed with a React frontend on Vercel, Spring Boot backend on Render, and MySQL on Clever Cloud.",
+      tech: ["React", "Spring Boot", "Spring Security", "JWT", "MySQL"],
+      desc: "Full-stack placement platform with role-based admin and student dashboards, secure JWT authentication, and application tracking. Deployed with React on Vercel, Spring Boot on Render, and MySQL on Clever Cloud.",
       link: "https://github.com/rameshkumark24/placement_system"
-    },
-    {
-      title: "ATM Console Application",
-      tech: ["Java", "OOP", "HashMap"],
-      desc: "Java console-based ATM simulator with multi-user account management, PIN authentication with lockout protection, and core banking operations including withdrawal, deposit, and PIN change.",
-      link: "https://github.com/rameshkumark24/java-Console"
     },
     {
       title: "Smart Civic Reporting",
@@ -101,8 +102,14 @@ const RESUME_DATA = {
       link: "https://github.com/rameshkumark24/Civic-Sense-SIH"
     },
     {
-        title: "NeuraNexus 2K25 – College Symposium Website",
-        tech: ["React.js", "HTML", "CSS", "JavaScript", "Vercel"],
+      title: "ATM Console Application",
+      tech: ["Java", "OOP", "HashMap"],
+      desc: "Java console-based ATM simulator with multi-user account management, PIN authentication with lockout protection, and core banking operations including withdrawal, deposit, and PIN change.",
+      link: "https://github.com/rameshkumark24/java-Console"
+    },
+    {
+        title: "NeuraNexus 2K25 – Symposium",
+        tech: ["React.js", "JavaScript", "Vercel"],
         desc: "Official college symposium website with event listings, registration workflows, and dynamic content, built with React.js and deployed live on Vercel for real-time audience access.",
         link: "https://github.com/rameshkumark24/NeuraNexux-2k25"
     },
@@ -115,17 +122,26 @@ const RESUME_DATA = {
     {
       title: "My Client Portfolio Website",
       tech: ["React", "Framer Motion", "Tailwind"],
-      desc: "Responsive client website built with React and Framer Motion, featuring modern UI design, integration of Google Analytics, sitemap generation, SEO-optimized titles and meta descriptions, and automated deployment via Vercel.",
+      desc: "Responsive client website built with React and Framer Motion, featuring modern UI design, integration of Google Analytics, sitemap generation, and SEO-optimized titles.",
       link: "https://github.com/rameshkumark24/Umapandiyan"
     }
   ],
+  achievements: [
+    "Solved 200+ Data Structures and Algorithms problems across arrays, hashing, trees, dynamic programming, and graphs.",
+    "Selected for next round in Hushh AI Hackathon (24-hour), built an AI-assisted placement system.",
+    "Shortlisted for Aptean AI Hackathon (4-hour), worked on an AI-powered ERP solution.",
+    "Finalist, Flinders AI University Competition – recognized for strong AI and problem-solving skills.",
+    "Selected at the institutional level for Smart India Hackathon (SIH) through competitive internal evaluation."
+  ],
   certifications: [
-  "HackerRank – Problem Solving (Intermediate)",
-  "HackerRank – SQL (Basic)",
-  "IIT Bombay – Java Training (92.5%)",
-  "Databricks Academy – AI/BI for Analysts", 
-  "Tata GenAI-Powered Data Analytics – Virtual Job Simulation (Forage)"
-]
+    "IBM Deep Learning with TensorFlow – Cognitive Class",
+    "Foundation of Prompt Engineering – AWS Skill Builder",
+    "HackerRank – Problem Solving (Intermediate)",
+    "HackerRank – SQL (Basic)",
+    "IIT Bombay – Java Training (92.5%)",
+    "Databricks Academy – AI/BI for Analysts", 
+    "Tata GenAI-Powered Data Analytics – Virtual Job Simulation"
+  ]
 };
 
 const App = () => {
@@ -139,45 +155,45 @@ const App = () => {
   const toggleTheme = () => setDarkMode(!darkMode);
 
   // --- SEO & META TAGS MANAGEMENT ---
-useEffect(() => {
-  document.title = `${RESUME_DATA.name} | ${RESUME_DATA.role}`;
+  useEffect(() => {
+    document.title = `${RESUME_DATA.name} | ${RESUME_DATA.role}`;
 
-  let link = document.querySelector("link[rel~='icon']");
-  if (!link) {
-    link = document.createElement('link');
-    link.rel = 'icon';
-    document.getElementsByTagName('head')[0].appendChild(link);
-  }
-  link.href = RESUME_DATA.profileImage;
-
-  const setMetaTag = (name, content, attribute = 'name') => {
-    let element = document.querySelector(`meta[${attribute}="${name}"]`);
-    if (!element) {
-      element = document.createElement('meta');
-      element.setAttribute(attribute, name);
-      document.head.appendChild(element);
+    let link = document.querySelector("link[rel~='icon']");
+    if (!link) {
+      link = document.createElement('link');
+      link.rel = 'icon';
+      document.getElementsByTagName('head')[0].appendChild(link);
     }
-    element.setAttribute('content', content);
-  };
+    link.href = RESUME_DATA.profileImage;
 
-  setMetaTag('description', RESUME_DATA.tagline);
-  setMetaTag(
-    'keywords',
-    'Java Backend Developer, Spring Boot Developer, REST API Developer, Data Structures and Algorithms, Software Engineer Fresher, MySQL, Backend Portfolio, Rameshkumar K'
-  );
-  setMetaTag('author', RESUME_DATA.name);
+    const setMetaTag = (name, content, attribute = 'name') => {
+      let element = document.querySelector(`meta[${attribute}="${name}"]`);
+      if (!element) {
+        element = document.createElement('meta');
+        element.setAttribute(attribute, name);
+        document.head.appendChild(element);
+      }
+      element.setAttribute('content', content);
+    };
 
-  setMetaTag('og:title', `${RESUME_DATA.name} - ${RESUME_DATA.role}`, 'property');
-  setMetaTag(
-    'og:description',
-    'Java Backend Developer portfolio featuring Spring Boot projects, REST APIs, database systems, and 200+ solved DSA problems.',
-    'property'
-  );
-  setMetaTag('og:image', RESUME_DATA.profileImage, 'property');
-  setMetaTag('og:url', "https://rameshkumark.com", 'property');
-  setMetaTag('og:type', 'website', 'property');
+    setMetaTag('description', RESUME_DATA.tagline);
+    setMetaTag(
+      'keywords',
+      'Java Backend Developer, Machine Learning, AI/ML, Spring Boot Developer, REST API Developer, Python, TensorFlow, SQL, Data Structures and Algorithms, Rameshkumar K'
+    );
+    setMetaTag('author', RESUME_DATA.name);
 
-}, []);
+    setMetaTag('og:title', `${RESUME_DATA.name} - ${RESUME_DATA.role}`, 'property');
+    setMetaTag(
+      'og:description',
+      'Hybrid Backend & Machine Learning portfolio showcasing AI Hackathons, Spring Boot projects, REST APIs, and 200+ solved DSA problems.',
+      'property'
+    );
+    setMetaTag('og:image', RESUME_DATA.profileImage, 'property');
+    setMetaTag('og:url', "https://rameshkumark.com", 'property');
+    setMetaTag('og:type', 'website', 'property');
+
+  }, []);
 
   // Custom Cursor Logic
   useEffect(() => {
@@ -225,12 +241,11 @@ useEffect(() => {
 
         /* Theme Variables */
         .light-theme {
-          /* New Gold & White Palette */
           --bg-primary: #FFFFFF;
           --bg-secondary: #F9FAFB;
           --text-primary: #111827;
           --text-secondary: #4B5563;
-          --accent-primary: #D4AF37; /* Premium Gold Cursor */
+          --accent-primary: #D4AF37; 
           --accent-glow: #FCD34D;
           --border-color: #E5E7EB;
           --font-heading: 'Neue Montreal', 'Manrope', sans-serif;
@@ -238,7 +253,6 @@ useEffect(() => {
         }
 
         .dark-theme {
-          /* Original Luxury Blue & Black Palette */
           --bg-primary: #05060A;
           --bg-secondary: #0D1117;
           --text-primary: #E8F1FF;
@@ -250,34 +264,27 @@ useEffect(() => {
           --font-body: 'Satoshi', sans-serif;
         }
 
-        /* Base Styles */
-        html {
-          scroll-behavior: smooth;
-        }
-
+        html { scroll-behavior: smooth; }
         body { 
           font-family: var(--font-body);
-          -webkit-overflow-scrolling: touch; /* iOS Momentum Scrolling */
+          -webkit-overflow-scrolling: touch; 
           overflow-x: hidden;
         }
         
         h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
         
-        /* Utility Classes using vars */
         .bg-custom-primary { background-color: var(--bg-primary); }
         .bg-custom-secondary { background-color: var(--bg-secondary); }
         .text-custom-primary { color: var(--text-primary); }
         .text-custom-secondary { color: var(--text-secondary); }
         .border-custom { border-color: var(--border-color); }
         
-        /* Animations */
         @keyframes morph {
           0% { border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; }
           50% { border-radius: 30% 60% 70% 40%/50% 60% 30% 60%; }
           100% { border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; }
         }
 
-        /* Improved Timeline Gradient for Mobile */
         .timeline-line::before {
           content: '';
           position: absolute;
@@ -325,8 +332,6 @@ useEffect(() => {
       <nav className="fixed w-full top-0 z-50 backdrop-blur-lg border-b transition-colors duration-300 border-custom" 
         style={{ backgroundColor: 'var(--bg-primary)' }}>
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          
-          {/* TITLE WITHOUT IMAGE */}
           <a 
             href="#" 
             className="flex items-center gap-3 text-2xl font-bold tracking-tighter transition-colors"
@@ -339,7 +344,6 @@ useEffect(() => {
             </span>
           </a>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             {['About', 'Skills', 'Projects', 'Experience', 'Certifications', 'Contact'].map((item) => (
               <button
@@ -366,7 +370,6 @@ useEffect(() => {
             </button>
           </div>
 
-          {/* Mobile Toggle */}
           <div className="md:hidden flex items-center gap-4">
             <button onClick={toggleTheme} style={{ color: 'var(--text-primary)' }} className="touch-manipulation p-2">
               {darkMode ? <Sun size={20} /> : <Moon size={20} />}
@@ -396,7 +399,6 @@ useEffect(() => {
 
       {/* --- HERO SECTION --- */}
       <section id="hero" className="min-h-screen flex items-center pt-28 pb-20 px-6 relative overflow-hidden">
-        {/* Background Blobs */}
         <div className="absolute top-20 right-0 w-96 h-96 rounded-full blur-[120px] opacity-20 animate-pulse" style={{ backgroundColor: 'var(--accent-primary)' }} />
         <div className="absolute bottom-20 left-0 w-72 h-72 rounded-full blur-[100px] opacity-20" style={{ backgroundColor: 'var(--accent-glow)' }} />
 
@@ -406,7 +408,7 @@ useEffect(() => {
               className="inline-block px-3 py-1 rounded-full border text-sm font-medium mb-4"
               style={{ 
                 borderColor: 'var(--accent-primary)', 
-                backgroundColor: 'rgba(212, 175, 55, 0.1)',
+                backgroundColor: 'rgba(47, 128, 237, 0.1)',
                 color: 'var(--accent-primary)'
               }}
             >
@@ -459,7 +461,6 @@ useEffect(() => {
 
           <div className="order-1 md:order-2 flex justify-center items-center relative">
             <div className="w-64 h-64 md:w-96 md:h-96 relative z-10">
-               {/* Image Container with Blob Mask */}
               <div 
                 className="w-full h-full rounded-[60%_40%_30%_70%/60%_30%_70%_40%] overflow-hidden border-4 animate-[morph_8s_ease-in-out_infinite] shadow-2xl"
                 style={{ 
@@ -490,8 +491,8 @@ useEffect(() => {
           </h2>
           <p className="text-lg leading-relaxed text-custom-secondary">
             I am a B.E. CSE (AI & ML) student at KPR Institute of Engineering and Technology with a CGPA of 8.1.
-            I focus on backend engineering using Java and Spring Boot, building scalable REST APIs, secure authentication systems, and structured database-driven applications.
-            I have solved 200+ DSA problems and continuously strengthen my understanding of OOP, collections, and system-level backend design.
+            As a hybrid backend developer, I bridge the gap between AI and robust system architectures. I focus on backend engineering using Java and Spring Boot, building scalable REST APIs, secure authentication systems, and structured database-driven applications.
+            I've solved 200+ DSA problems and continuously leverage modern AI workflows to elevate system capabilities.
           </p>
         </div>
       </section>
@@ -502,7 +503,7 @@ useEffect(() => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16" style={{ fontFamily: 'var(--font-heading)' }}>
             Technical <span style={{ color: 'var(--accent-primary)' }}>Skills</span>
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {RESUME_DATA.skills.map((skill, idx) => (
               <div 
                 key={idx}
@@ -549,9 +550,9 @@ useEffect(() => {
                     {project.tech.map((t, i) => (
                       <span 
                         key={i} 
-                        className="px-3 py-1 text-xs rounded-full"
+                        className="px-3 py-1 text-xs font-semibold rounded-full"
                         style={{ 
-                          backgroundColor: 'rgba(212, 175, 55, 0.1)',
+                          backgroundColor: 'rgba(47, 128, 237, 0.1)',
                           color: 'var(--accent-primary)'
                         }}
                       >
@@ -573,12 +574,10 @@ useEffect(() => {
             Work <span style={{ color: 'var(--accent-primary)' }}>Experience</span>
           </h2>
           
-          {/* TIMELINE CONTAINER WITH CUSTOM GRADIENT */}
           <div className="space-y-12 relative timeline-line">
             {RESUME_DATA.experience.map((job, idx) => (
               <div key={idx} className="relative grid grid-cols-[auto_1fr] md:flex md:items-center md:justify-between md:justify-normal md:odd:flex-row-reverse group gap-6 md:gap-0">
                 
-                {/* TIMELINE DOT */}
                 <div 
                   className="flex items-center justify-center w-10 h-10 rounded-full border-2 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 bg-custom-primary mt-6 md:mt-0"
                   style={{ borderColor: 'var(--accent-primary)' }}
@@ -586,7 +585,6 @@ useEffect(() => {
                   <div className="w-3 h-3 rounded-full animate-pulse" style={{ backgroundColor: 'var(--accent-primary)' }} />
                 </div>
                 
-                {/* CARD CONTENT */}
                 <div className="w-full md:w-[calc(50%-2.5rem)] p-6 rounded-xl border transition-all duration-300 hover:scale-[1.02] bg-custom-primary border-custom">
                   <div className="flex justify-between items-center mb-2 flex-wrap gap-2">
                     <h3 className="font-bold text-lg" style={{ fontFamily: 'var(--font-heading)' }}>{job.role}</h3>
@@ -603,37 +601,76 @@ useEffect(() => {
         </div>
       </section>
 
-      {/* --- CERTIFICATIONS SECTION --- */}
+      {/* --- ACHIEVEMENTS & CERTIFICATIONS SECTION --- */}
       <section id="certifications" className="py-24 px-6">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16" style={{ fontFamily: 'var(--font-heading)' }}>
             Achievements & <span style={{ color: 'var(--accent-primary)' }}>Certifications</span>
           </h2>
           
-          <div className="grid grid-cols-1 gap-4">
-            {RESUME_DATA.certifications.map((cert, idx) => (
-              <div 
-                key={idx}
-                className="flex items-start gap-4 p-4 rounded-lg border transition-all hover:translate-x-1 border-custom bg-custom-secondary"
-                style={{ hoverBorderColor: 'var(--accent-primary)' }}
-                onMouseEnter={(e) => {
-                    setIsHovering(true);
-                    e.currentTarget.style.borderColor = 'var(--accent-primary)';
-                }}
-                onMouseLeave={(e) => {
-                    setIsHovering(false);
-                    e.currentTarget.style.borderColor = ''; // reset
-                }}
-              >
-                <div className="mt-1" style={{ color: 'var(--accent-primary)' }}>
-                    <Award size={20} />
-                </div>
-                <p className="text-sm md:text-base font-medium text-custom-primary">{cert}</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            
+            {/* Achievements */}
+            <div>
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3" style={{ fontFamily: 'var(--font-heading)' }}>
+                <Trophy size={28} style={{ color: 'var(--accent-primary)' }} />
+                Key Achievements
+              </h3>
+              <div className="grid grid-cols-1 gap-4">
+                {RESUME_DATA.achievements.map((achieve, idx) => (
+                  <div 
+                    key={idx}
+                    className="flex items-start gap-4 p-4 rounded-lg border transition-all hover:translate-x-1 border-custom bg-custom-secondary"
+                    onMouseEnter={(e) => {
+                        setIsHovering(true);
+                        e.currentTarget.style.borderColor = 'var(--accent-primary)';
+                    }}
+                    onMouseLeave={(e) => {
+                        setIsHovering(false);
+                        e.currentTarget.style.borderColor = ''; 
+                    }}
+                  >
+                    <div className="mt-1 shrink-0" style={{ color: 'var(--accent-primary)' }}>
+                        <Award size={20} />
+                    </div>
+                    <p className="text-sm md:text-base font-medium text-custom-primary">{achieve}</p>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+
+            {/* Certifications */}
+            <div>
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3" style={{ fontFamily: 'var(--font-heading)' }}>
+                <Award size={28} style={{ color: 'var(--accent-primary)' }} />
+                Certifications
+              </h3>
+              <div className="grid grid-cols-1 gap-4">
+                {RESUME_DATA.certifications.map((cert, idx) => (
+                  <div 
+                    key={idx}
+                    className="flex items-start gap-4 p-4 rounded-lg border transition-all hover:translate-x-1 border-custom bg-custom-secondary"
+                    onMouseEnter={(e) => {
+                        setIsHovering(true);
+                        e.currentTarget.style.borderColor = 'var(--accent-primary)';
+                    }}
+                    onMouseLeave={(e) => {
+                        setIsHovering(false);
+                        e.currentTarget.style.borderColor = ''; 
+                    }}
+                  >
+                    <div className="mt-1 shrink-0" style={{ color: 'var(--accent-primary)' }}>
+                        <FileText size={20} />
+                    </div>
+                    <p className="text-sm md:text-base font-medium text-custom-primary">{cert}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
           </div>
 
-          <div className="mt-10 text-center">
+          <div className="mt-12 text-center">
             <a 
                 href={RESUME_DATA.certificatesLink}
                 target="_blank"
@@ -644,7 +681,7 @@ useEffect(() => {
                 onMouseLeave={() => setIsHovering(false)}
             >
                 <ExternalLink size={18} />
-                View Certificates & Credentials
+                View All Credentials
             </a>
           </div>
         </div>
@@ -652,14 +689,14 @@ useEffect(() => {
 
       {/* --- CONTACT SECTION --- */}
       <section id="contact" className="py-24 px-6 relative overflow-hidden bg-custom-secondary">
-         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full blur-3xl pointer-events-none" style={{ backgroundColor: 'rgba(212, 175, 55, 0.05)' }} />
+         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full blur-3xl pointer-events-none" style={{ backgroundColor: 'rgba(47, 128, 237, 0.05)' }} />
          
          <div className="max-w-3xl mx-auto text-center relative z-10">
            <h2 className="text-3xl md:text-4xl font-bold mb-8" style={{ fontFamily: 'var(--font-heading)' }}>
              Let's Work <span style={{ color: 'var(--accent-primary)' }}>Together</span>
            </h2>
            <p className="text-xl mb-12 text-custom-secondary">
-            Looking for a motivated Java Backend Developer with strong DSA and Spring Boot fundamentals. I am currently open to internships and full-time backend roles.
+            Looking for a motivated hybrid backend developer with strong Java, Spring Boot, and ML foundations. I am currently open to internships and full-time roles.
            </p>
            
            <div className="flex flex-col md:flex-row justify-center gap-6">
@@ -685,7 +722,6 @@ useEffect(() => {
                { icon: <Code size={24} />, link: RESUME_DATA.socials.leetcode },
                { icon: <Globe size={24} />, link: RESUME_DATA.socials.portfolio }
              ].map((social, idx) => {
-               // Special handling for Website/Globe icon to scroll to Hero
                const isPortfolioLink = social.link === "#hero";
                return (
                  <a 
@@ -700,7 +736,6 @@ useEffect(() => {
                     }
                   }}
                   className="p-4 rounded-full border transition-all hover:-translate-y-2 border-custom bg-custom-primary touch-manipulation"
-                  style={{ hoverColor: 'var(--accent-primary)', hoverBorderColor: 'var(--accent-primary)' }}
                   onMouseEnter={(e) => {
                     setIsHovering(true);
                     e.currentTarget.style.borderColor = 'var(--accent-primary)';
@@ -708,7 +743,7 @@ useEffect(() => {
                   }}
                   onMouseLeave={(e) => {
                     setIsHovering(false);
-                    e.currentTarget.style.borderColor = ''; // reset to class style
+                    e.currentTarget.style.borderColor = ''; 
                     e.currentTarget.style.color = '';
                   }}
                  >
