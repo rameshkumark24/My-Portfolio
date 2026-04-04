@@ -23,13 +23,14 @@ This is my personal portfolio website showcasing:
 ## ✨ Key Highlights
 
 ### 🚀 Backend Engineering & ML Integration
-- Combining foundational backend skills (Spring Boot, APIs, Databases) with intelligent AI/ML integrations.
-- Deployed full-stack systems and explored Prompt Engineering & Generative AI basics.
+- **Robust Backend Systems:** Building secure REST APIs with Spring Boot, Node.js, and Flask, backed by MySQL and MongoDB.
+- **AI/ML Pipelines:** Developed end-to-end Machine Learning systems, including a Food Delivery Time Predictor (90%+ accuracy) and an LSTM-based Indian Stock Market Forecaster.
+- **LLM Integrations:** Engineered "TrendScript", a serverless application combining real-time Google Trends data with Groq's LLaMA 3.1 for automated content generation.
 
 ### 🏆 Achievements & Leadership
-- **Hackathons:** Selected for SIH institution level, Finalist in Flinders AI Univ Comp, next-round pick for Hushh AI Hackathon, and participated for Aptean AI Hackathon.
+- **Hackathons:** Selected for SIH institution level, Finalist in Flinders AI Univ Comp, next-round pick for Hushh AI Hackathon, and shortlisted for Aptean AI Hackathon.
 - **Problem Solving:** 200+ problems solved across arrays, hashing, trees, dynamic programming, and graphs.
-- **Leadership:** Led coordination for departmental technical events, managing communication with faculty and 200+ participants, increasing engagement by 20%.
+- **Leadership:** Served as Public Relations Officer, leading coordination for departmental technical events, managing communication with faculty and 200+ participants, and effectively increasing overall engagement by 20%.
 
 ### 🔐 Core Backend Skills
 - Spring Boot REST APIs, JWT Authentication, and BCrypt
