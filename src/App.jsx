@@ -53,8 +53,13 @@ const RESUME_DATA = {
       icon: <Server size={24} />
     },
     {
-      name: "Frontend & AI",
-      tech: "React.js, TensorFlow, LLM Integrations",
+      name: "Frontend",
+      tech: "React.js, Streamlit",
+      icon: <Layers size={24} />
+    },
+      {
+      name: "AI & ML",
+      tech: "Scikit Learn, TensorFlow, LLM Integrations",
       icon: <Layers size={24} />
     },
     {
