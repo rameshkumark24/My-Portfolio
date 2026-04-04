@@ -1,8 +1,8 @@
 # Rameshkumar K – Portfolio 🚀
 
-**Java Backend Developer | AI/ML Integrations | Spring Boot**
+**Java Backend Developer | AI Enthusiast**
 
-Computer Science undergraduate bridging robust backend engineering with Machine Learning. Passionate about building scalable REST APIs, managing databases, and integrating AI capabilities to create powerful next-generation applications.
+Computer Science undergraduate specializing in robust backend engineering with a strong foundation in Machine Learning. Passionate about building scalable REST APIs, managing databases, and empowering backend systems with intelligent AI integrations.
 
 ---
 
@@ -22,7 +22,7 @@ This is my personal portfolio website showcasing:
 
 ## ✨ Key Highlights
 
-### 🚀 Hybrid Backend & ML Focus
+### 🚀 Backend Engineering & ML Integration
 - Combining foundational backend skills (Spring Boot, APIs, Databases) with intelligent AI/ML integrations.
 - Deployed full-stack systems and explored Prompt Engineering & Generative AI basics.
 
@@ -31,7 +31,7 @@ This is my personal portfolio website showcasing:
 - **Problem Solving:** 200+ problems solved across arrays, hashing, trees, dynamic programming, and graphs.
 - **Leadership:** Led coordination for departmental technical events, managing communication with faculty and 200+ participants, increasing engagement by 20%.
 
-### 🔐 Backend Engineering
+### 🔐 Core Backend Skills
 - Spring Boot REST APIs, JWT Authentication, and BCrypt
 - Role-based access control (RBAC) and clean layered architecture
 - Relational (MySQL) and Non-Relational (MongoDB) databases
