@@ -29,8 +29,8 @@ import {
 // --- DATA FROM RESUME ---
 const RESUME_DATA = {
   name: "Rameshkumar K",
-  role: "Java Backend Developer | AI/ML Integrations",
-  tagline: "Computer Science undergraduate bridging robust backend engineering (Spring Boot) with Machine Learning. Passionate about building scalable REST APIs, managing databases, and integrating AI capabilities to create next-generation applications.",
+  role: "Java Backend Developer | AI Enthusiast",
+  tagline: "Computer Science undergraduate specializing in robust backend engineering (Spring Boot) with a strong foundation in Machine Learning. Passionate about building scalable REST APIs, secure database architectures, and empowering systems with intelligent AI integrations.",
   email: "rameshkumaroff@gmail.com",
   profileImage: "https://i.ibb.co/jvVWGRTv/Whats-App-Image-2025-12-06-at-3-21-53-PM.jpg",
   resumeLink: "https://drive.google.com/drive/folders/1JBDQXGWWhgc7Q3D0EZZ9gQKw_pZHBJ_y",
@@ -186,7 +186,7 @@ const App = () => {
     setMetaTag('og:title', `${RESUME_DATA.name} - ${RESUME_DATA.role}`, 'property');
     setMetaTag(
       'og:description',
-      'Hybrid Backend & Machine Learning portfolio showcasing AI Hackathons, Spring Boot projects, REST APIs, and 200+ solved DSA problems.',
+      'Backend-focused developer portfolio showcasing Spring Boot projects, AI Hackathons, REST APIs, and 200+ solved DSA problems.',
       'property'
     );
     setMetaTag('og:image', RESUME_DATA.profileImage, 'property');
@@ -491,8 +491,8 @@ const App = () => {
           </h2>
           <p className="text-lg leading-relaxed text-custom-secondary">
             I am a B.E. CSE (AI & ML) student at KPR Institute of Engineering and Technology with a CGPA of 8.1.
-            As a hybrid backend developer, I bridge the gap between AI and robust system architectures. I focus on backend engineering using Java and Spring Boot, building scalable REST APIs, secure authentication systems, and structured database-driven applications.
-            I've solved 200+ DSA problems and continuously leverage modern AI workflows to elevate system capabilities.
+            As a backend-focused developer, I specialize in engineering robust architectures using Java and Spring Boot. I build scalable REST APIs, secure authentication systems, and structured database-driven applications. 
+            Leveraging my academic background in AI/ML, I actively bridge the gap between traditional backend systems and modern AI workflows, building smart, future-ready applications. I've also solved 200+ DSA problems to keep my core computer science fundamentals sharp.
           </p>
         </div>
       </section>
@@ -696,7 +696,7 @@ const App = () => {
              Let's Work <span style={{ color: 'var(--accent-primary)' }}>Together</span>
            </h2>
            <p className="text-xl mb-12 text-custom-secondary">
-            Looking for a motivated hybrid backend developer with strong Java, Spring Boot, and ML foundations. I am currently open to internships and full-time roles.
+            Looking for a motivated backend developer with strong Java, Spring Boot, and ML foundations. I am currently open to internships and full-time roles.
            </p>
            
            <div className="flex flex-col md:flex-row justify-center gap-6">
