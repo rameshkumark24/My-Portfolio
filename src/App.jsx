@@ -30,7 +30,7 @@ import {
 const RESUME_DATA = {
   name: "Rameshkumar K",
   role: "Software Development Engineer",
-  tagline: "Computer Science undergraduate specializing in backend engineering and system architecture. Passionate about building robust APIs (Java/Spring Boot), developing scalable data workflows (Python/GCP), and bridging the gap between core backend systems and interactive frontends.",
+  tagline: "Computer Science undergraduate specializing in backend engineering and system architecture. Passionate about building robust REST APIs with Java and Spring Boot, developing scalable data workflows in Python, and solving complex problems with optimized data structures.",
   email: "rameshkumaroff@gmail.com",
   profileImage: "https://i.ibb.co/jvVWGRTv/Whats-App-Image-2025-12-06-at-3-21-53-PM.jpg",
   resumeLink: "https://drive.google.com/drive/folders/1JBDQXGWWhgc7Q3D0EZZ9gQKw_pZHBJ_y",
