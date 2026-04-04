@@ -76,12 +76,6 @@ const RESUME_DATA = {
       desc: "Reviewed existing automation solutions and production workflows, and contributed to a proof-of-concept bot using Automation Anywhere. Gained practical exposure to enterprise automation processes, documentation, and agile collaboration."
     },
     {
-      company: "Departmental Technical Events",
-      role: "Event Coordinator & Leadership",
-      period: "2023 - Present",
-      desc: "Led coordination for departmental technical events, managing communication with faculty and 200+ participants, effectively increasing overall engagement by 20%."
-    },
-    {
       company: "Web Development",
       role: "Freelance",
       period: "2024 - 2025",
@@ -91,39 +85,39 @@ const RESUME_DATA = {
   projects: [
     {
       title: "Placement Management System",
-      tech: ["React", "Spring Boot", "Spring Security", "JWT", "MySQL"],
-      desc: "Full-stack placement platform with role-based admin and student dashboards, secure JWT authentication, and application tracking. Deployed with React on Vercel, Spring Boot on Render, and MySQL on Clever Cloud.",
+      tech: ["Spring Boot", "React", "JWT", "MySQL"],
+      desc: "Full-stack placement platform with role-based admin and student dashboards, secure JWT authentication, and application tracking. Deployed with Spring Boot on Render and MySQL on Clever Cloud.",
       link: "https://github.com/rameshkumark24/placement_system"
+    },
+    {
+      title: "Food Delivery Time Predictor",
+      tech: ["Python", "Flask", "XGBoost", "Random Forest"],
+      desc: "Production-ready machine learning pipeline and Flask web application that predicts food delivery times with 90%+ accuracy using multi-factor analysis (traffic, weather, distance).",
+      link: "https://github.com/rameshkumark24/food_delivery_prediction"
+    },
+    {
+      title: "TrendScript AI Shorts Generator",
+      tech: ["Vanilla JS", "Serverless APIs", "LLaMA 3.1", "Groq API"],
+      desc: "Data-driven serverless web app that generates YouTube Shorts production packages in milliseconds by combining real-time Google Trends data with Groq's LLaMA 3.1 AI model.",
+      link: "https://github.com/rameshkumark24/trendscript"
+    },
+    {
+      title: "AI Stock Market Predictor",
+      tech: ["Python", "TensorFlow", "LSTM", "yfinance"],
+      desc: "Deep learning application using LSTM neural networks to forecast 10-day stock price trends for NSE/BSE markets, dynamically fetching and processing real-time Yahoo Finance data.",
+      link: "https://github.com/rameshkumark24/Stockmarketfutureprediction"
     },
     {
       title: "Smart Civic Reporting",
       tech: ["Node.js", "MongoDB", "Express"],
-      desc: "Full-stack civic issue reporting system enabling citizens to submit and track issues via web and USSD interfaces, with rule-based routing for improved accessibility.",
+      desc: "Full-stack civic issue reporting system enabling citizens to submit and track issues via web and USSD interfaces, featuring rule-based routing for improved accessibility.",
       link: "https://github.com/rameshkumark24/Civic-Sense-SIH"
     },
     {
       title: "ATM Console Application",
-      tech: ["Java", "OOP", "HashMap"],
-      desc: "Java console-based ATM simulator with multi-user account management, PIN authentication with lockout protection, and core banking operations including withdrawal, deposit, and PIN change.",
+      tech: ["Java", "OOP", "Data Structures"],
+      desc: "Java console-based ATM simulator with multi-user account management, PIN authentication with lockout protection, and core banking operations to demonstrate strong OOP principles.",
       link: "https://github.com/rameshkumark24/java-Console"
-    },
-    {
-        title: "NeuraNexus 2K25 – Symposium",
-        tech: ["React.js", "JavaScript", "Vercel"],
-        desc: "Official college symposium website with event listings, registration workflows, and dynamic content, built with React.js and deployed live on Vercel for real-time audience access.",
-        link: "https://github.com/rameshkumark24/NeuraNexux-2k25"
-    },
-    {
-      title: "KalyanamBiodata Maker",
-      tech: ["React", "Tailwind", "jsPDF"],
-      desc: "Privacy-focused web app for generating professional marriage biodatas. Features real-time previews, horoscope generation, and high-quality A4 PDF export.",
-      link: "https://github.com/rameshkumark24/Kalyanambiodata"
-    },
-    {
-      title: "My Client Portfolio Website",
-      tech: ["React", "Framer Motion", "Tailwind"],
-      desc: "Responsive client website built with React and Framer Motion, featuring modern UI design, integration of Google Analytics, sitemap generation, and SEO-optimized titles.",
-      link: "https://github.com/rameshkumark24/Umapandiyan"
     }
   ],
   achievements: [
@@ -131,6 +125,7 @@ const RESUME_DATA = {
     "Selected for next round in Hushh AI Hackathon (24-hour), built an AI-assisted placement system.",
     "Shortlisted for Aptean AI Hackathon (4-hour), worked on an AI-powered ERP solution.",
     "Finalist, Flinders AI University Competition – recognized for strong AI and problem-solving skills.",
+    "Served as Public Relations Officer, leading coordination for departmental technical events, managing communication with faculty and 200+ participants, and effectively increasing overall engagement by 20%.",
     "Selected at the institutional level for Smart India Hackathon (SIH) through competitive internal evaluation."
   ],
   certifications: [
