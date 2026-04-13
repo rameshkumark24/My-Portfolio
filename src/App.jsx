@@ -59,7 +59,7 @@ const RESUME_DATA = {
     },
       {
       name: "AI & ML",
-      tech: "Scikit Learn, TensorFlow, LLM Integrations",
+      tech: "Scikit Learn, TensorFlow, LLM Integrations, Multi-Agent Systems",
       icon: <Layers size={24} />
     },
     {
