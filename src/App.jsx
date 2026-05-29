@@ -163,6 +163,16 @@ const App = () => {
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
 
+  const navItems = [
+    { label: 'About', id: 'about' },
+    { label: 'Skills', id: 'skills' },
+    { label: 'Projects', id: 'projects' },
+    { label: 'Experience', id: 'experience' },
+    { label: 'Open Source', id: 'opensource' },
+    { label: 'Certifications', id: 'certifications' },
+    { label: 'Contact', id: 'contact' }
+  ];
+
   // Toggle Theme
   const toggleTheme = () => setDarkMode(!darkMode);
 
@@ -350,97 +360,91 @@ const App = () => {
       </div>
 
       {/* --- NAVBAR --- */}
-const navItems = [
-  { label: 'About', id: 'about' },
-  { label: 'Skills', id: 'skills' },
-  { label: 'Projects', id: 'projects' },
-  { label: 'Experience', id: 'experience' },
-  { label: 'Open Source', id: 'opensource' },
-  { label: 'Certifications', id: 'certifications' },
-  { label: 'Contact', id: 'contact' }
-];
-
-<nav
-  className="fixed w-full top-0 z-50 backdrop-blur-lg border-b transition-colors duration-300 border-custom"
-  style={{ backgroundColor: 'var(--bg-primary)' }}
->
-  <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <a
-      href="#"
-      className="flex items-center gap-3 text-2xl font-bold tracking-tighter transition-colors"
-      style={{ fontFamily: 'var(--font-heading)' }}
-      onMouseEnter={() => setIsHovering(true)}
-      onMouseLeave={() => setIsHovering(false)}
-    >
-      <span>
-        Rameshkumar<span style={{ color: 'var(--accent-primary)' }}>.</span>
-      </span>
-    </a>
-
-    <div className="hidden md:flex items-center space-x-8">
-      {navItems.map((item) => (
-        <button
-          key={item.id}
-          onClick={() => scrollTo(item.id)}
-          className="text-sm font-medium transition-colors touch-manipulation"
-          style={{
-            color:
-              activeSection === item.id
-                ? 'var(--accent-primary)'
-                : 'var(--text-secondary)'
-          }}
-          onMouseEnter={() => setIsHovering(true)}
-          onMouseLeave={() => setIsHovering(false)}
+        <nav
+          className="fixed w-full top-0 z-50 backdrop-blur-lg border-b transition-colors duration-300 border-custom"
+          style={{ backgroundColor: 'var(--bg-primary)' }}
         >
-          {item.label}
-        </button>
-      ))}
-
-      <button
-        onClick={toggleTheme}
-        className="p-2 rounded-full transition-colors hover:bg-black/5 dark:hover:bg-white/5 touch-manipulation"
-        style={{ color: 'var(--text-primary)' }}
-        onMouseEnter={() => setIsHovering(true)}
-        onMouseLeave={() => setIsHovering(false)}
-      >
-        {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-      </button>
-    </div>
-
-    <div className="md:hidden flex items-center gap-4">
-      <button
-        onClick={toggleTheme}
-        style={{ color: 'var(--text-primary)' }}
-        className="touch-manipulation p-2"
-      >
-        {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-      </button>
-
-      <button
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
-        style={{ color: 'var(--text-primary)' }}
-        className="touch-manipulation p-2"
-      >
-        {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-      </button>
-    </div>
-  </div>
-
-  {isMenuOpen && (
-    <div className="md:hidden fixed top-[73px] left-0 w-full h-[calc(100vh-73px)] p-8 flex flex-col items-center gap-8 bg-custom-primary overflow-y-auto">
-      {navItems.map((item) => (
-        <button
-          key={item.id}
-          onClick={() => scrollTo(item.id)}
-          className="text-2xl font-medium text-custom-primary touch-manipulation py-2"
-          style={{ fontFamily: 'var(--font-heading)' }}
-        >
-          {item.label}
-        </button>
-      ))}
-    </div>
-  )}
-</nav>
+          <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a
+              href="#"
+              className="flex items-center gap-3 text-2xl font-bold tracking-tighter transition-colors"
+              style={{ fontFamily: 'var(--font-heading)' }}
+              onClick={(e) => {
+                e.preventDefault();
+                scrollTo('hero');
+              }}
+              onMouseEnter={() => setIsHovering(true)}
+              onMouseLeave={() => setIsHovering(false)}
+            >
+              <span>
+                Rameshkumar<span style={{ color: 'var(--accent-primary)' }}>.</span>
+              </span>
+            </a>
+        
+            <div className="hidden md:flex items-center space-x-8">
+              {navItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollTo(item.id)}
+                  className="text-sm font-medium transition-colors touch-manipulation"
+                  style={{
+                    color:
+                      activeSection === item.id
+                        ? 'var(--accent-primary)'
+                        : 'var(--text-secondary)'
+                  }}
+                  onMouseEnter={() => setIsHovering(true)}
+                  onMouseLeave={() => setIsHovering(false)}
+                >
+                  {item.label}
+                </button>
+              ))}
+        
+              <button
+                onClick={toggleTheme}
+                className="p-2 rounded-full transition-colors hover:bg-black/5 dark:hover:bg-white/5 touch-manipulation"
+                style={{ color: 'var(--text-primary)' }}
+                onMouseEnter={() => setIsHovering(true)}
+                onMouseLeave={() => setIsHovering(false)}
+              >
+                {darkMode ? <Sun size={20} /> : <Moon size={20} />}
+              </button>
+            </div>
+        
+            <div className="md:hidden flex items-center gap-4">
+              <button
+                onClick={toggleTheme}
+                style={{ color: 'var(--text-primary)' }}
+                className="touch-manipulation p-2"
+              >
+                {darkMode ? <Sun size={20} /> : <Moon size={20} />}
+              </button>
+        
+              <button
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                style={{ color: 'var(--text-primary)' }}
+                className="touch-manipulation p-2"
+              >
+                {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
+            </div>
+          </div>
+        
+          {isMenuOpen && (
+            <div className="md:hidden fixed top-[73px] left-0 w-full h-[calc(100vh-73px)] p-8 flex flex-col items-center gap-8 bg-custom-primary overflow-y-auto">
+              {navItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollTo(item.id)}
+                  className="text-2xl font-medium text-custom-primary touch-manipulation py-2"
+                  style={{ fontFamily: 'var(--font-heading)' }}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
+          )}
+        </nav>
 
       {/* --- HERO SECTION --- */}
       <section id="hero" className="min-h-screen flex items-center pt-28 pb-20 px-6 relative overflow-hidden">
@@ -489,12 +493,11 @@ const navItems = [
               >
                 Let's Talk
               </a>
-              <a 
-                href={RESUME_DATA.resumeLink} 
-                target="_blank" 
+             <a
+                href={RESUME_DATA.resumeLink}
+                target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-2 px-8 py-3 border rounded-lg font-bold hover:bg-opacity-10 transition-all border-custom touch-manipulation"
-                style={{ hoverBackgroundColor: 'var(--accent-primary)' }}
+                className="flex items-center gap-2 px-8 py-3 border rounded-lg font-bold transition-all border-custom touch-manipulation"
                 onMouseEnter={() => setIsHovering(true)}
                 onMouseLeave={() => setIsHovering(false)}
               >
@@ -649,68 +652,71 @@ const navItems = [
 
 <section id="opensource" className="py-24 px-6">
   <div className="max-w-5xl mx-auto">
-      <h2
-        className="text-3xl md:text-4xl font-bold text-center mb-16"
-        style={{ fontFamily: 'var(--font-heading)' }}
+
+    <h2
+      className="text-3xl md:text-4xl font-bold text-center mb-16"
+      style={{ fontFamily: 'var(--font-heading)' }}
+    >
+      Open Source <span style={{ color: 'var(--accent-primary)' }}>Contributions</span>
+    </h2>
+
+    {RESUME_DATA.opensource.map((item, idx) => (
+      <div
+        key={idx}
+        className="mb-6 p-8 rounded-2xl border transition-all duration-300 hover:scale-[1.01]"
+        style={{
+          backgroundColor: 'var(--bg-secondary)',
+          borderColor: 'var(--border-color)'
+        }}
       >
-        Open Source <span style={{ color: 'var(--accent-primary)' }}>Contributions</span>
-      </h2>
-      
-      {RESUME_DATA.opensource.map((item, idx) => (
-        <div
-          key={idx}
-          className="p-8 rounded-2xl border transition-all duration-300 hover:scale-[1.01]"
-          style={{
-            backgroundColor: 'var(--bg-secondary)',
-            borderColor: 'var(--border-color)'
-          }}
-        >
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
-      
-            <div>
-              <h3
-                className="text-2xl font-bold"
-                style={{ fontFamily: 'var(--font-heading)' }}
-              >
-                {item.organization}
-              </h3>
-      
-              <p className="text-custom-secondary">
-                {item.role}
-              </p>
-            </div>
-      
-            <div className="flex flex-col md:items-end gap-2">
-              <span
-                className="text-sm font-medium"
-                style={{ color: 'var(--accent-primary)' }}
-              >
-                {item.period}
-              </span>
-      
-              <a
-                href={item.link}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 font-medium"
-                style={{ color: 'var(--accent-primary)' }}
-              >
-                View Pull Requests
-                <ExternalLink size={18} />
-              </a>
-            </div>
-      
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+
+          <div>
+            <h3
+              className="text-2xl font-bold"
+              style={{ fontFamily: 'var(--font-heading)' }}
+            >
+              {item.organization}
+            </h3>
+
+            <p className="text-custom-secondary">
+              {item.role}
+            </p>
           </div>
-      
-          <ul className="space-y-4 text-custom-secondary">
-            {item.achievements.map((achievement, achievementIdx) => (
-              <li key={achievementIdx}>
-                • {achievement}
-              </li>
-            ))}
-          </ul>
+
+          <div className="flex flex-col md:items-end gap-2">
+            <span
+              className="text-sm font-medium"
+              style={{ color: 'var(--accent-primary)' }}
+            >
+              {item.period}
+            </span>
+
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 font-medium"
+              style={{ color: 'var(--accent-primary)' }}
+            >
+              View Pull Requests
+              <ExternalLink size={18} />
+            </a>
+          </div>
+
         </div>
-      ))}
+
+        <ul className="space-y-4 text-custom-secondary">
+          {item.achievements.map((achievement, achievementIdx) => (
+            <li key={achievementIdx}>
+              • {achievement}
+            </li>
+          ))}
+        </ul>
+
+      </div>
+    ))}
+
   </div>
 </section>
       {/* --- ACHIEVEMENTS & CERTIFICATIONS SECTION --- */}
@@ -869,7 +875,7 @@ const navItems = [
 
       {/* --- FOOTER --- */}
       <footer className="py-8 text-center border-t border-custom text-custom-secondary">
-        <p>&copy; 2025 {RESUME_DATA.name}. Built with React & Tailwind.</p>
+          <p>&copy; {new Date().getFullYear()} {RESUME_DATA.name}. Built with React & Tailwind.</p>
       </footer>
     </div>
   );
