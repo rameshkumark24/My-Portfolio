@@ -350,73 +350,97 @@ const App = () => {
       </div>
 
       {/* --- NAVBAR --- */}
-      <nav className="fixed w-full top-0 z-50 backdrop-blur-lg border-b transition-colors duration-300 border-custom" 
-        style={{ backgroundColor: 'var(--bg-primary)' }}>
-        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <a 
-            href="#" 
-            className="flex items-center gap-3 text-2xl font-bold tracking-tighter transition-colors"
-            style={{ fontFamily: 'var(--font-heading)' }}
-            onMouseEnter={() => setIsHovering(true)}
-            onMouseLeave={() => setIsHovering(false)}
-          >
-            <span>
-                Rameshkumar<span style={{ color: 'var(--accent-primary)' }}>.</span>
-            </span>
-          </a>
+const navItems = [
+  { label: 'About', id: 'about' },
+  { label: 'Skills', id: 'skills' },
+  { label: 'Projects', id: 'projects' },
+  { label: 'Experience', id: 'experience' },
+  { label: 'Open Source', id: 'opensource' },
+  { label: 'Certifications', id: 'certifications' },
+  { label: 'Contact', id: 'contact' }
+];
 
-          <div className="hidden md:flex items-center space-x-8">
-            {['About', 'Skills', 'Projects', 'Experience', 'Open Source', 'Certifications', 'Contact'].map((item) => (
-              <button
-                key={item}
-                onClick={() => scrollTo(item.toLowerCase())}
-                className="text-sm font-medium transition-colors touch-manipulation"
-                style={{ 
-                  color: activeSection === item.toLowerCase() ? 'var(--accent-primary)' : 'var(--text-secondary)'
-                }}
-                onMouseEnter={() => setIsHovering(true)}
-                onMouseLeave={() => setIsHovering(false)}
-              >
-                {item}
-              </button>
-            ))}
-            <button 
-              onClick={toggleTheme}
-              className="p-2 rounded-full transition-colors hover:bg-black/5 dark:hover:bg-white/5 touch-manipulation"
-              style={{ color: 'var(--text-primary)' }}
-              onMouseEnter={() => setIsHovering(true)}
-              onMouseLeave={() => setIsHovering(false)}
-            >
-              {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
-          </div>
+<nav
+  className="fixed w-full top-0 z-50 backdrop-blur-lg border-b transition-colors duration-300 border-custom"
+  style={{ backgroundColor: 'var(--bg-primary)' }}
+>
+  <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a
+      href="#"
+      className="flex items-center gap-3 text-2xl font-bold tracking-tighter transition-colors"
+      style={{ fontFamily: 'var(--font-heading)' }}
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
+    >
+      <span>
+        Rameshkumar<span style={{ color: 'var(--accent-primary)' }}>.</span>
+      </span>
+    </a>
 
-          <div className="md:hidden flex items-center gap-4">
-            <button onClick={toggleTheme} style={{ color: 'var(--text-primary)' }} className="touch-manipulation p-2">
-              {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)} style={{ color: 'var(--text-primary)' }} className="touch-manipulation p-2">
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
-        </div>
+    <div className="hidden md:flex items-center space-x-8">
+      {navItems.map((item) => (
+        <button
+          key={item.id}
+          onClick={() => scrollTo(item.id)}
+          className="text-sm font-medium transition-colors touch-manipulation"
+          style={{
+            color:
+              activeSection === item.id
+                ? 'var(--accent-primary)'
+                : 'var(--text-secondary)'
+          }}
+          onMouseEnter={() => setIsHovering(true)}
+          onMouseLeave={() => setIsHovering(false)}
+        >
+          {item.label}
+        </button>
+      ))}
 
-        {/* Mobile Menu Dropdown */}
-        {isMenuOpen && (
-          <div className="md:hidden fixed top-[73px] left-0 w-full h-[calc(100vh-73px)] p-8 flex flex-col items-center gap-8 bg-custom-primary overflow-y-auto">
-            {['About', 'Skills', 'Projects', 'Experience', 'Open Source', 'Certifications', 'Contact'].map((item) => (
-              <button
-                key={item}
-                onClick={() => scrollTo(item.toLowerCase())}
-                className="text-2xl font-medium text-custom-primary touch-manipulation py-2"
-                style={{ fontFamily: 'var(--font-heading)' }}
-              >
-                {item}
-              </button>
-            ))}
-          </div>
-        )}
-      </nav>
+      <button
+        onClick={toggleTheme}
+        className="p-2 rounded-full transition-colors hover:bg-black/5 dark:hover:bg-white/5 touch-manipulation"
+        style={{ color: 'var(--text-primary)' }}
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
+      >
+        {darkMode ? <Sun size={20} /> : <Moon size={20} />}
+      </button>
+    </div>
+
+    <div className="md:hidden flex items-center gap-4">
+      <button
+        onClick={toggleTheme}
+        style={{ color: 'var(--text-primary)' }}
+        className="touch-manipulation p-2"
+      >
+        {darkMode ? <Sun size={20} /> : <Moon size={20} />}
+      </button>
+
+      <button
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        style={{ color: 'var(--text-primary)' }}
+        className="touch-manipulation p-2"
+      >
+        {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+      </button>
+    </div>
+  </div>
+
+  {isMenuOpen && (
+    <div className="md:hidden fixed top-[73px] left-0 w-full h-[calc(100vh-73px)] p-8 flex flex-col items-center gap-8 bg-custom-primary overflow-y-auto">
+      {navItems.map((item) => (
+        <button
+          key={item.id}
+          onClick={() => scrollTo(item.id)}
+          className="text-2xl font-medium text-custom-primary touch-manipulation py-2"
+          style={{ fontFamily: 'var(--font-heading)' }}
+        >
+          {item.label}
+        </button>
+      ))}
+    </div>
+  )}
+</nav>
 
       {/* --- HERO SECTION --- */}
       <section id="hero" className="min-h-screen flex items-center pt-28 pb-20 px-6 relative overflow-hidden">
