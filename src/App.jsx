@@ -11,14 +11,8 @@ import {
   ExternalLink, 
   Code, 
   Database, 
-  Cpu, 
   Layers, 
-  Terminal,
   ArrowRight,
-  Cloud,
-  BarChart,
-  Box,
-  Brain,
   Award,
   Trophy,
   FileText,
@@ -29,8 +23,8 @@ import {
 // --- DATA FROM RESUME ---
 const RESUME_DATA = {
   name: "Rameshkumar K",
-  role: "Software Development Engineer | AI Engineer",
-  tagline: "Computer Science undergraduate specializing in backend engineering and system architecture. Passionate about building robust REST APIs with Java and Spring Boot, developing scalable data workflows in Python, and solving complex problems with optimized data structures.",
+  role: "Software Engineer | Backend & AI Systems",
+  tagline: "Computer Science undergraduate specializing in backend engineering with Java and Spring Boot. Experienced in building REST APIs, database-driven applications, and scalable software systems, with additional exposure to AI/ML and intelligent application development.",
   email: "rameshkumaroff@gmail.com",
   profileImage: "https://i.ibb.co/jvVWGRTv/Whats-App-Image-2025-12-06-at-3-21-53-PM.jpg",
   resumeLink: "https://drive.google.com/drive/folders/1JBDQXGWWhgc7Q3D0EZZ9gQKw_pZHBJ_y",
@@ -54,12 +48,12 @@ const RESUME_DATA = {
     },
     {
       name: "Frontend",
-      tech: "React.js, Streamlit",
+      tech: "React.js, TypeScript",
       icon: <Layers size={24} />
     },
       {
       name: "AI & ML",
-      tech: "Scikit Learn, TensorFlow, LLM Integrations, Multi-Agent Systems",
+      tech: "Scikit-learn, TensorFlow, Feature Engineering, LLM Integration, Streamlit",
       icon: <Layers size={24} />
     },
     {
@@ -84,49 +78,67 @@ const RESUME_DATA = {
       company: "Web Development",
       role: "Freelance",
       period: "2024 - 2025",
-      desc: "Developed and deployed full-stack web applications including authentication flows, REST API integrations, and database-driven features using modern frameworks."
+      desc: "Built and deployed AI-assisted web applications with authentication, database integration, and responsive user interfaces, managing the complete development lifecycle from requirements to deployment."
     } 
   ],
-  projects: [
-    {
-      title: "Placement Management System",
-      tech: ["Spring Boot", "React", "JWT", "MySQL"],
-      desc: "Full-stack placement platform with role-based admin and student dashboards, secure JWT authentication, and application tracking. Deployed with Spring Boot on Render and MySQL on Clever Cloud.",
-      link: "https://github.com/rameshkumark24/placement_system"
-    },
-    {
-      title: "Food Delivery Time Predictor",
-      tech: ["Python", "Flask", "XGBoost", "Random Forest"],
-      desc: "Production-ready machine learning pipeline and Flask web application that predicts food delivery times with 90%+ accuracy using multi-factor analysis (traffic, weather, distance).",
-      link: "https://github.com/rameshkumark24/food_delivery_prediction"
-    },
-    {
-      title: "TrendScript AI Shorts Generator",
-      tech: ["Vanilla JS", "Serverless APIs", "LLaMA 3.1", "Groq API"],
-      desc: "Data-driven serverless web app that generates YouTube Shorts production packages in milliseconds by combining real-time Google Trends data with Groq's LLaMA 3.1 AI model.",
-      link: "https://github.com/rameshkumark24/trendscript"
-    },
-    {
-      title: "AI Stock Market Predictor",
-      tech: ["Python", "TensorFlow", "LSTM", "yfinance"],
-      desc: "Deep learning application using LSTM neural networks to forecast 10-day stock price trends for NSE/BSE markets, dynamically fetching and processing real-time Yahoo Finance data.",
-      link: "https://github.com/rameshkumark24/Stockmarketfutureprediction"
-    },
-    {
-      title: "Smart Civic Reporting",
-      tech: ["Node.js", "MongoDB", "Express"],
-      desc: "Full-stack civic issue reporting system enabling citizens to submit and track issues via web and USSD interfaces, featuring rule-based routing for improved accessibility.",
-      link: "https://github.com/rameshkumark24/Civic-Sense-SIH"
-    },
-    {
-      title: "ATM Console Application",
-      tech: ["Java", "OOP", "Data Structures"],
-      desc: "Java console-based ATM simulator with multi-user account management, PIN authentication with lockout protection, and core banking operations to demonstrate strong OOP principles.",
-      link: "https://github.com/rameshkumark24/java-Console"
-    }
-  ],
+projects: [
+  {
+    title: "Placement Management System",
+    tech: ["Spring Boot", "React", "JWT", "MySQL"],
+    desc: "Full-stack placement platform with role-based access control, secure authentication, application tracking, and dashboard-driven workflows.",
+    link: "https://github.com/rameshkumark24/placement_system"
+  },
+
+  {
+    title: "DSA Mastery Roadmap Platform",
+    tech: ["Next.js", "TypeScript", "Supabase", "PostgreSQL"],
+    desc: "Interactive DSA preparation platform featuring progress tracking, revision modules, and Kanban-based job application management.",
+    link: "https://github.com/rameshkumark24/dsapath"
+  },
+
+  {
+    title: "Library Management System",
+    tech: ["Spring Boot", "React", "MySQL", "REST API"],
+    desc: "Full-stack library management solution supporting inventory tracking, member management, and issue-return workflows.",
+    link: "https://github.com/rameshkumark24/library-system"
+  },
+
+  {
+    title: "Smart Civic Reporting",
+    tech: ["Node.js", "MongoDB", "Express"],
+    desc: "Citizen issue reporting platform with workflow-based issue tracking and accessibility-focused service routing.",
+    link: "https://github.com/rameshkumark24/Civic-Sense-SIH"
+  },
+
+  {
+    title: "Food Delivery Time Predictor",
+    tech: ["Python", "Flask", "Scikit-learn", "XGBoost"],
+    desc: "Machine learning application for predicting food delivery times using traffic, weather, and distance-based features.",
+    link: "https://github.com/rameshkumark24/FoodDelivery_time_prediction"
+  },
+
+  {
+    title: "TrendScript AI Shorts Generator",
+    tech: ["JavaScript", "LLM APIs", "Groq", "Google Trends"],
+    desc: "AI-assisted content generation platform that creates short-form video production workflows using real-time trend data.",
+    link: "https://github.com/rameshkumark24/trendscript"
+  }
+],
+  opensource: [
+  {
+    organization: "Hushh AI",
+    role: "Open Source Contributor",
+    period: "Apr 2026 - May 2026",
+    link: "https://github.com/hushh-labs/hushh_Tech_website/issues?q=is%3Apr+author%3Arameshkumark24",
+    achievements: [
+      "Contributed UI improvements and accessibility enhancements through collaborative pull requests and community-driven development workflows.",
+      "Recognized as a Hushh Community Champion for active open-source contributions and consistent community engagement.",
+      "Received contributor recognition for participation, contribution quality, and collaboration within the open-source ecosystem."
+    ]
+  }
+],
   achievements: [
-    "Served as Public Relations Officer, leading coordination for departmental technical events, managing communication with faculty and 200+ participants, and effectively increasing overall engagement by 20%.",
+    "Served as Public Relations Officer, coordinating departmental technical events and managing communication with faculty and 200+ participants.",
     "Solved 200+ Data Structures and Algorithms problems across arrays, hashing, trees, dynamic programming, and graphs.",
     "Selected for next round in Hushh AI Hackathon (24-hour), built an AI-assisted placement system.",
     "Shortlisted for Aptean AI Hackathon (4-hour), worked on an AI-powered ERP solution.",
@@ -207,7 +219,16 @@ const App = () => {
   // Intersection Observer for Scroll Spy & Reveal
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'about', 'skills', 'projects', 'experience', 'certifications', 'contact'];
+      const sections = [
+               'hero',
+               'about',
+               'skills',
+               'projects',
+               'experience',
+               'opensource',
+               'certifications',
+               'contact'
+              ];
       const scrollPosition = window.scrollY + 300;
 
       sections.forEach(section => {
@@ -345,7 +366,7 @@ const App = () => {
           </a>
 
           <div className="hidden md:flex items-center space-x-8">
-            {['About', 'Skills', 'Projects', 'Experience', 'Certifications', 'Contact'].map((item) => (
+            {['About', 'Skills', 'Projects', 'Experience', 'Open Source', 'Certifications', 'Contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollTo(item.toLowerCase())}
@@ -383,7 +404,7 @@ const App = () => {
         {/* Mobile Menu Dropdown */}
         {isMenuOpen && (
           <div className="md:hidden fixed top-[73px] left-0 w-full h-[calc(100vh-73px)] p-8 flex flex-col items-center gap-8 bg-custom-primary overflow-y-auto">
-            {['About', 'Skills', 'Projects', 'Experience', 'Certifications', 'Contact'].map((item) => (
+            {['About', 'Skills', 'Projects', 'Experience', 'Open Source', 'Certifications', 'Contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollTo(item.toLowerCase())}
@@ -493,6 +514,7 @@ const App = () => {
             I am a B.E. CSE (AI & ML) student at KPR Institute of Engineering and Technology with a CGPA of 8.1.
             As a backend-focused developer, I specialize in engineering robust architectures using Java and Spring Boot. I build scalable REST APIs, secure authentication systems, and structured database-driven applications. 
             Leveraging my academic background in AI/ML, I actively bridge the gap between traditional backend systems and modern AI workflows, building smart, future-ready applications. I've also solved 200+ DSA problems to keep my core computer science fundamentals sharp.
+            Additionally, I contribute to open-source projects and actively participate in hackathons to strengthen collaborative software development skills.
           </p>
         </div>
       </section>
@@ -601,6 +623,72 @@ const App = () => {
         </div>
       </section>
 
+<section id="opensource" className="py-24 px-6">
+  <div className="max-w-5xl mx-auto">
+      <h2
+        className="text-3xl md:text-4xl font-bold text-center mb-16"
+        style={{ fontFamily: 'var(--font-heading)' }}
+      >
+        Open Source <span style={{ color: 'var(--accent-primary)' }}>Contributions</span>
+      </h2>
+      
+      {RESUME_DATA.opensource.map((item, idx) => (
+        <div
+          key={idx}
+          className="p-8 rounded-2xl border transition-all duration-300 hover:scale-[1.01]"
+          style={{
+            backgroundColor: 'var(--bg-secondary)',
+            borderColor: 'var(--border-color)'
+          }}
+        >
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+      
+            <div>
+              <h3
+                className="text-2xl font-bold"
+                style={{ fontFamily: 'var(--font-heading)' }}
+              >
+                {item.organization}
+              </h3>
+      
+              <p className="text-custom-secondary">
+                {item.role}
+              </p>
+            </div>
+      
+            <div className="flex flex-col md:items-end gap-2">
+              <span
+                className="text-sm font-medium"
+                style={{ color: 'var(--accent-primary)' }}
+              >
+                {item.period}
+              </span>
+      
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 font-medium"
+                style={{ color: 'var(--accent-primary)' }}
+              >
+                View Pull Requests
+                <ExternalLink size={18} />
+              </a>
+            </div>
+      
+          </div>
+      
+          <ul className="space-y-4 text-custom-secondary">
+            {item.achievements.map((achievement, achievementIdx) => (
+              <li key={achievementIdx}>
+                • {achievement}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+  </div>
+</section>
       {/* --- ACHIEVEMENTS & CERTIFICATIONS SECTION --- */}
       <section id="certifications" className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
@@ -696,7 +784,7 @@ const App = () => {
              Let's Work <span style={{ color: 'var(--accent-primary)' }}>Together</span>
            </h2>
            <p className="text-xl mb-12 text-custom-secondary">
-            Looking for a motivated backend developer with strong Java, Spring Boot, and ML foundations. I am currently open to internships and full-time roles.
+            I am actively seeking Software Engineering, Backend Development, and AI-focused internship or full-time opportunities.
            </p>
            
            <div className="flex flex-col md:flex-row justify-center gap-6">
