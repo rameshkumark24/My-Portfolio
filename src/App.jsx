@@ -22,137 +22,178 @@ import {
 
 // --- DATA FROM RESUME ---
 const RESUME_DATA = {
-  name: "Rameshkumar K",
-  role: "Software Engineer | Backend & AI Systems",
-  tagline: "Computer Science undergraduate specializing in backend engineering with Java and Spring Boot. Experienced in building REST APIs, database-driven applications, and scalable software systems, with additional exposure to AI/ML and intelligent application development.",
+  name: "Rameshkumar Kannan",
+
+  role: "Software Engineer | Python Backend",
+
+  tagline:
+    "Computer Science undergraduate focused on software and backend engineering with Python, FastAPI, REST APIs, and databases. I build practical software systems while strengthening Data Structures, Algorithms, and core computer science fundamentals using Java, with additional experience in AI/ML-driven applications.",
+
   email: "rameshkumaroff@gmail.com",
-  profileImage: "https://i.ibb.co/jvVWGRTv/Whats-App-Image-2025-12-06-at-3-21-53-PM.jpg",
-  resumeLink: "https://drive.google.com/drive/folders/1JBDQXGWWhgc7Q3D0EZZ9gQKw_pZHBJ_y",
-  certificatesLink: "https://drive.google.com/drive/folders/1_Ps5q-H-QXrw_RmczzqJDkpuSNrZrzjd",
+
+  profileImage:
+    "https://i.ibb.co/jvVWGRTv/Whats-App-Image-2025-12-06-at-3-21-53-PM.jpg",
+
+  resumeLink:
+    "https://drive.google.com/drive/folders/1JBDQXGWWhgc7Q3D0EZZ9gQKw_pZHBJ_y",
+
+  certificatesLink:
+    "https://drive.google.com/drive/folders/1_Ps5q-H-QXrw_RmczzqJDkpuSNrZrzjd",
+
   socials: {
     linkedin: "https://www.linkedin.com/in/rameshkumark24/",
     github: "https://github.com/rameshkumark24",
     leetcode: "https://leetcode.com/u/Ramesh_Kumar_K/",
-    portfolio: "#hero" 
+    portfolio: "#hero"
   },
+
   skills: [
     {
       name: "Languages",
-      tech: "Java, Python, SQL",
+      tech: "Python, Java, SQL",
       icon: <Code size={24} />
     },
     {
-      name: "Backend & Cloud",
-      tech: "Spring Boot, REST APIs, Google Cloud Platform (GCP)",
+      name: "Backend Engineering",
+      tech: "FastAPI, REST APIs, WebSockets",
       icon: <Server size={24} />
     },
     {
-      name: "Frontend",
-      tech: "React.js, TypeScript",
-      icon: <Layers size={24} />
-    },
-      {
-      name: "AI & ML",
-      tech: "Scikit-learn, TensorFlow, Feature Engineering, LLM Integration, Streamlit",
-      icon: <Layers size={24} />
-    },
-    {
       name: "Databases",
-      tech: "MySQL, MongoDB",
+      tech: "PostgreSQL, MySQL, MongoDB, Supabase",
       icon: <Database size={24} />
     },
     {
-      name: "Core & Tools",
-      tech: "DSA (200+), OOP, Git, Postman, IntelliJ",
-      icon: <Wrench size={24} />
-    }
-  ],
-  experience: [
-    {
-      company: "Lennox India Technology Center",
-      role: "Summer Intern",
-      period: "Jun 2025 - Aug 2025",
-      desc: "Reviewed existing automation solutions and production workflows, and contributed to a proof-of-concept bot using Automation Anywhere. Gained practical exposure to enterprise automation processes, documentation, and agile collaboration."
+      name: "AI & Machine Learning",
+      tech: "Scikit-learn, Pandas, NumPy",
+      icon: <Layers size={24} />
     },
     {
-      company: "Web Development",
-      role: "Freelance",
-      period: "2024 - 2025",
-      desc: "Built and deployed AI-assisted web applications with authentication, database integration, and responsive user interfaces, managing the complete development lifecycle from requirements to deployment."
-    } 
+      name: "Developer Tools",
+      tech: "Git, GitHub, Docker, Postman",
+      icon: <Wrench size={24} />
+    },
+    {
+      name: "Core Fundamentals",
+      tech: "Data Structures & Algorithms, OOP, DBMS, Operating Systems",
+      icon: <Code size={24} />
+    }
   ],
-projects: [
-  {
-    title: "Placement Management System",
-    tech: ["Spring Boot", "React", "JWT", "MySQL"],
-    desc: "Full-stack placement platform with role-based access control, secure authentication, application tracking, and dashboard-driven workflows.",
-    link: "https://github.com/rameshkumark24/placement_system"
-  },
 
-  {
-    title: "DSA Mastery Roadmap Platform",
-    tech: ["Next.js", "TypeScript", "Supabase", "PostgreSQL"],
-    desc: "Interactive DSA preparation platform featuring progress tracking, revision modules, and Kanban-based job application management.",
-    link: "https://github.com/rameshkumark24/dsapath"
-  },
+  experience: [
+    {
+      company: "Lennox India Technology Center (LITC)",
+      role: "Summer Intern",
+      period: "Jun 2025 - Aug 2025",
+      desc:
+        "Worked in an enterprise Agile environment with exposure to SDLC, workflow automation, requirement analysis, testing, and iterative software delivery within cross-functional teams."
+    },
+    {
+      company: "Independent Projects & Freelance Development",
+      role: "Freelance Web Developer",
+      period: "2024 - Present",
+      desc:
+        "Developed and deployed 4+ web applications, handling requirements, feature implementation, API integrations, testing, debugging, version control, and production deployment."
+    }
+  ],
 
-  {
-    title: "Library Management System",
-    tech: ["Spring Boot", "React", "MySQL", "REST API"],
-    desc: "Full-stack library management solution supporting inventory tracking, member management, and issue-return workflows.",
-    link: "https://github.com/rameshkumark24/library-system"
-  },
+  projects: [
+    {
+      title: "NexOps — Industrial Predictive Maintenance Platform",
+      tech: [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "MQTT",
+        "WebSockets",
+        "Docker",
+        "Scikit-learn"
+      ],
+      desc:
+        "Real-time Industrial IoT platform that processes MQTT telemetry, detects machine anomalies, calculates predictive risk scores, and streams live operational data through a FastAPI backend.",
+      highlight: "Top 6 Finalist — ABB Accelerator 2026",
+      link: "https://github.com/rameshkumark24/abb-nexops"
+    },
 
-  {
-    title: "Smart Civic Reporting",
-    tech: ["Node.js", "MongoDB", "Express"],
-    desc: "Citizen issue reporting platform with workflow-based issue tracking and accessibility-focused service routing.",
-    link: "https://github.com/rameshkumark24/Civic-Sense-SIH"
-  },
+    {
+      title: "DSAPath — DSA Preparation Platform",
+      tech: ["React", "TypeScript", "Supabase", "PostgreSQL"],
+      desc:
+        "Full-stack preparation platform for organizing DSA roadmaps, tracking topic-wise progress, managing revision workflows, and maintaining job applications.",
+      link: "https://github.com/rameshkumark24/dsapath"
+    },
 
-  {
-    title: "Food Delivery Time Predictor",
-    tech: ["Python", "Flask", "Scikit-learn", "XGBoost"],
-    desc: "Machine learning application for predicting food delivery times using traffic, weather, and distance-based features.",
-    link: "https://github.com/rameshkumark24/FoodDelivery_time_prediction"
-  },
+    {
+      title: "AI-Driven Sales Forecasting System",
+      tech: [
+        "Python",
+        "Pandas",
+        "Scikit-learn",
+        "Power BI",
+        "Streamlit"
+      ],
+      desc:
+        "End-to-end machine learning system for processing retail sales data, engineering predictive features, analyzing historical patterns, and generating forecasting insights.",
+      link:
+        "https://github.com/rameshkumark24/Sales-Forecasting-System"
+    },
 
-  {
-    title: "TrendScript AI Shorts Generator",
-    tech: ["JavaScript", "LLM APIs", "Groq", "Google Trends"],
-    desc: "AI-assisted content generation platform that creates short-form video production workflows using real-time trend data.",
-    link: "https://github.com/rameshkumark24/trendscript"
-  }
-],
+    {
+      title: "Placement Management System",
+      tech: ["Java", "Spring Boot", "React", "MySQL", "JWT"],
+      desc:
+        "Full-stack placement management platform featuring authentication, role-based access control, application tracking, and REST API-driven workflows.",
+      link: "https://github.com/rameshkumark24/placement_system"
+    },
+
+    {
+      title: "Smart Civic Reporting Platform",
+      tech: ["Node.js", "Express", "MongoDB"],
+      desc:
+        "Citizen-focused issue reporting platform with structured complaint tracking and workflow-based service routing, developed for Smart India Hackathon.",
+      link: "https://github.com/rameshkumark24/Civic-Sense-SIH"
+    },
+
+    {
+      title: "TrendScript — AI Content Workflow",
+      tech: ["JavaScript", "LLM APIs", "Groq", "Google Trends"],
+      desc:
+        "AI-assisted content workflow that combines trend discovery and LLM-powered generation to support short-form content creation.",
+      link: "https://github.com/rameshkumark24/trendscript"
+    }
+  ],
+
   opensource: [
-  {
-    organization: "Hushh AI",
-    role: "Open Source Contributor",
-    period: "Apr 2026 - May 2026",
-    link: "https://github.com/hushh-labs/hushh_Tech_website/issues?q=is%3Apr+author%3Arameshkumark24",
-    achievements: [
-      "Contributed UI improvements and accessibility enhancements through collaborative pull requests and community-driven development workflows.",
-      "Recognized as a Hushh Community Champion for active open-source contributions and consistent community engagement.",
-      "Received contributor recognition for participation, contribution quality, and collaboration within the open-source ecosystem."
-    ]
-  }
-],
-  achievements: [
-    "Served as Public Relations Officer, coordinating departmental technical events and managing communication with faculty and 200+ participants.",
-    "Solved 200+ Data Structures and Algorithms problems across arrays, hashing, trees, dynamic programming, and graphs.",
-    "Selected for next round in Hushh AI Hackathon (24-hour), built an AI-assisted placement system.",
-    "Shortlisted for Aptean AI Hackathon (4-hour), worked on an AI-powered ERP solution.",
-    "Finalist, Flinders AI University Competition – recognized for strong AI and problem-solving skills.",
-    "Selected at the institutional level for Smart India Hackathon (SIH) through competitive internal evaluation."
+    {
+      organization: "Hushh AI",
+      role: "Open Source Contributor",
+      period: "Apr 2026 - May 2026",
+      link:
+        "https://github.com/hushh-labs/hushh_Tech_website/issues?q=is%3Apr+author%3Arameshkumark24",
+      achievements: [
+        "Contributed improvements through collaborative GitHub pull requests and community-driven development workflows.",
+        "Participated in open-source collaboration, version control, issue resolution, and peer-driven development.",
+        "Recognized as a Hushh Community Champion for active contributions to the developer community."
+      ]
+    }
   ],
+
+  achievements: [
+    "Team Lead & Top 6 Finalist — ABB Accelerator 2026, selected among 1,600+ teams and 14,000+ registrations across India.",
+    "Top 15 Team — Hushh AI 24-Hour Hackathon, building an AI-assisted placement platform.",
+    "Selected among the Top 45 institutional teams for Smart India Hackathon 2025 and qualified for national submission.",
+    "Finalist — Flinders University AI Competition for AI-driven solution design and problem-solving.",
+    "Solved 200+ Data Structures and Algorithms problems across arrays, hashing, trees, dynamic programming, and graphs.",
+    "Recognized as a Hushh Community Champion for active open-source contributions."
+  ],
+
   certifications: [
-    "IBM Deep Learning with TensorFlow – Cognitive Class",
-    "Foundation of Prompt Engineering – AWS Skill Builder",
-    "HackerRank – Problem Solving (Intermediate)",
-    "HackerRank – SQL (Basic)",
-    "IIT Bombay – Java Training (92.5%)",
-    "Databricks Academy – AI/BI for Analysts", 
-    "Tata GenAI-Powered Data Analytics – Virtual Job Simulation"
+    "HackerRank — Problem Solving (Intermediate)",
+    "IIT Bombay — Java Training (92.5%)",
+    "HackerRank — SQL (Basic)",
+    "IBM Cognitive Class — Deep Learning with TensorFlow",
+    "AWS Skill Builder — Foundations of Prompt Engineering",
+    "Databricks Academy — AI/BI for Analysts"
   ]
 };
 
@@ -199,18 +240,18 @@ const App = () => {
     };
 
     setMetaTag('description', RESUME_DATA.tagline);
-    setMetaTag(
-      'keywords',
-      'Java Backend Developer, Machine Learning, AI/ML, Spring Boot Developer, REST API Developer, Python, TensorFlow, SQL, Data Structures and Algorithms, Rameshkumar K'
-    );
+setMetaTag(
+  'keywords',
+  'Rameshkumar Kannan, Software Engineer, Python Developer, Python Backend Developer, Backend Engineer, FastAPI Developer, REST API Developer, Java, Data Structures and Algorithms, DSA, PostgreSQL, Docker, AI ML Engineer, Software Engineer India'
+);
     setMetaTag('author', RESUME_DATA.name);
 
     setMetaTag('og:title', `${RESUME_DATA.name} - ${RESUME_DATA.role}`, 'property');
-    setMetaTag(
-      'og:description',
-      'Backend-focused developer portfolio showcasing Spring Boot projects, AI Hackathons, REST APIs, and 200+ solved DSA problems.',
-      'property'
-    );
+setMetaTag(
+  'og:description',
+  'Software engineering portfolio of Rameshkumar Kannan, showcasing Python backend development, FastAPI, real-time systems, DSA, open-source contributions, and AI/ML projects.',
+  'property'
+);
     setMetaTag('og:image', RESUME_DATA.profileImage, 'property');
     setMetaTag('og:url', "https://rameshkumark.com", 'property');
     setMetaTag('og:type', 'website', 'property');
@@ -537,14 +578,40 @@ const App = () => {
           <h2 className="text-3xl md:text-4xl font-bold" style={{ fontFamily: 'var(--font-heading)' }}>
             About <span style={{ color: 'var(--accent-primary)' }}>Me</span>
           </h2>
-          <p className="text-lg leading-relaxed text-custom-secondary">
-            I am a B.E. CSE (AI & ML) student at KPR Institute of Engineering and Technology with a CGPA of 8.1.
-            As a backend-focused developer, I specialize in engineering robust architectures using Java and Spring Boot. I build scalable REST APIs, secure authentication systems, and structured database-driven applications. 
-            Leveraging my academic background in AI/ML, I actively bridge the gap between traditional backend systems and modern AI workflows, building smart, future-ready applications. I've also solved 200+ DSA problems to keep my core computer science fundamentals sharp.
-            Additionally, I contribute to open-source projects and actively participate in hackathons to strengthen collaborative software development skills.
-          </p>
+<p className="text-lg leading-relaxed text-custom-secondary">
+  I am a Computer Science Engineering (AI & ML) undergraduate at KPR
+  Institute of Engineering and Technology, focused on software engineering
+  and Python backend development.
+</p>
+
+<p className="text-lg leading-relaxed text-custom-secondary">
+  I build backend and data-driven applications using Python, FastAPI,
+  REST APIs, and databases. I use Java to strengthen my Data Structures,
+  Algorithms, and Object-Oriented Programming fundamentals, with 200+
+  problems solved across core problem-solving patterns.
+</p>
+
+<p className="text-lg leading-relaxed text-custom-secondary">
+  My AI & ML background helps me build software that combines reliable
+  engineering with intelligent capabilities. I actively participate in
+  hackathons and open-source development, including leading NexOps to the
+  Top 6 at ABB Accelerator 2026.
+</p>
         </div>
+        <div className="mt-10 p-6 rounded-xl border border-custom bg-custom-secondary">
+          <h3 className="text-xl font-bold mb-4">
+            Currently Building & Learning
+          </h3>
+        
+          <p className="text-custom-secondary">
+            Deepening my backend engineering skills through advanced Python,
+            FastAPI, PostgreSQL, API design, testing, Redis, Docker, CI/CD,
+            system design, and production-oriented backend projects.
+          </p>
+</div>
       </section>
+
+      
 
       {/* --- SKILLS SECTION --- */}
       <section id="skills" className="py-24 px-6 bg-custom-secondary">
@@ -573,6 +640,7 @@ const App = () => {
 
       {/* --- PROJECTS SECTION --- */}
       <section id="projects" className="py-24 px-6">
+        
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16" style={{ fontFamily: 'var(--font-heading)' }}>
             Featured <span style={{ color: 'var(--accent-primary)' }}>Projects</span>
@@ -592,9 +660,21 @@ const App = () => {
                       <ExternalLink size={20} />
                     </a>
                   </div>
-                  <p className="text-sm leading-relaxed text-custom-secondary">
-                    {project.desc}
-                  </p>
+{project.highlight && (
+  <div
+    className="inline-flex px-3 py-1 text-xs font-semibold rounded-full"
+    style={{
+      backgroundColor: 'rgba(47, 128, 237, 0.1)',
+      color: 'var(--accent-primary)'
+    }}
+  >
+    🏆 {project.highlight}
+  </div>
+)}
+
+<p className="text-sm leading-relaxed text-custom-secondary">
+  {project.desc}
+</p>
                   <div className="flex flex-wrap gap-2 pt-4">
                     {project.tech.map((t, i) => (
                       <span 
@@ -814,8 +894,10 @@ const App = () => {
              Let's Work <span style={{ color: 'var(--accent-primary)' }}>Together</span>
            </h2>
            <p className="text-xl mb-12 text-custom-secondary">
-            I am actively seeking Software Engineering, Backend Development, and AI-focused internship or full-time opportunities.
-           </p>
+  I'm open to Software Engineering, SDE Intern, and Python Backend
+  opportunities where I can contribute, learn, and build reliable
+  software systems.
+</p>
            
            <div className="flex flex-col md:flex-row justify-center gap-6">
              <a 
